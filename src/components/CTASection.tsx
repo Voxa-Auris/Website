@@ -49,7 +49,7 @@ const CTASection = () => {
             </Button>
           </div>
           
-          <p className="text-sm text-muted-foreground mt-8"> • Project op maat samengesteld</p>
+          <p className="text-sm text-muted-foreground mt-8">• Project op maat samengesteld</p>
         </motion.div>
       </div>
     </section>;
