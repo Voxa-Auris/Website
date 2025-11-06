@@ -1,0 +1,32 @@
+# Git Commit Message Guidelines
+
+# Format: <type>(<scope>): <subject>
+
+# Types:
+# ✨ feat:     Nieuwe feature
+# 🐛 fix:      Bug fix
+# 📝 docs:     Documentatie wijzigingen
+# 💄 style:    Code styling (formatting, geen logica wijzigingen)
+# ♻️  refactor: Code refactoring
+# ⚡ perf:     Performance verbetering
+# ✅ test:     Tests toevoegen/updaten
+# 🔧 chore:    Build/config wijzigingen
+# 🚀 deploy:   Deployment gerelateerd
+
+# Scope voorbeelden:
+# - hero, navigation, footer (components)
+# - diensten, contact (pages)
+# - build, deploy (infrastructure)
+
+# Voorbeelden:
+# ✨ feat(hero): voeg call-to-action button toe
+# 🐛 fix(navigation): los mobile menu toggle bug op
+# 💄 style(diensten): verbeter responsive layout
+# 📝 docs: update deployment instructies
+# 🚀 deploy: configureer Hostinger Git deployment
+
+# Subject regels:
+# - Gebruik present tense ("voeg toe" niet "toegevoegd")
+# - Maximaal 50 karakters
+# - Geen punt aan het einde
+# - Wees specifiek en duidelijk

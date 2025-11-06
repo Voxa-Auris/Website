@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Voxa Auris Brand Colors */
+    --background: 0 0% 0%;
+    --foreground: 45 80% 76%;
+    
+    --card: 0 0% 5%;
+    --card-foreground: 45 80% 76%;
+    
+    --popover: 0 0% 5%;
+    --popover-foreground: 45 80% 76%;
+    
+    --primary: 45 80% 76%;
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 194 80% 49%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    
+    --accent: 194 80% 49%;
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 45 80% 76%;
+    
+    --radius: 0.75rem;
+    
+    /* Premium Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(45, 80%, 76%) 0%, hsl(45, 70%, 65%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(194, 80%, 49%) 0%, hsl(194, 70%, 38%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 5%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 5%) 0%, hsl(0, 0%, 8%) 100%);
+    
+    /* Glows & Shadows */
+    --glow-gold: 0 0 40px hsl(45, 80%, 76% / 0.3);
+    --glow-blue: 0 0 40px hsl(194, 80%, 49% / 0.3);
+    --shadow-premium: 0 20px 60px -10px hsl(0, 0%, 0% / 0.8);
+    --shadow-card: 0 10px 40px -10px hsl(45, 80%, 76% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 45 80% 76%;
+    
+    --card: 0 0% 5%;
+    --card-foreground: 45 80% 76%;
+    
+    --popover: 0 0% 5%;
+    --popover-foreground: 45 80% 76%;
+    
+    --primary: 45 80% 76%;
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 194 80% 49%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    
+    --accent: 194 80% 49%;
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 45 80% 76%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  .glow-text {
+    text-shadow: var(--glow-gold);
+  }
+  
+  .glow-blue {
+    box-shadow: var(--glow-blue);
+  }
+  
+  .glow-gold {
+    box-shadow: var(--glow-gold);
+  }
+}
