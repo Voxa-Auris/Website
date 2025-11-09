@@ -1,9 +1,20 @@
 # Voxa Auris - Apache Configuration for React SPA
 
-# MIME Types for JavaScript Modules (FIX for "application/octet-stream" error)
-AddType application/javascript .js
-AddType application/javascript .mjs
-AddType text/javascript .js
+# AGGRESSIVE MIME Type Fix - Force correct types
+<FilesMatch "\.(js|mjs)$">
+  ForceType application/javascript
+</FilesMatch>
+
+<FilesMatch "\.css$">
+  ForceType text/css
+</FilesMatch>
+
+<FilesMatch "\.json$">
+  ForceType application/json
+</FilesMatch>
+
+# Also try AddType as fallback
+AddType application/javascript .js .mjs
 AddType text/css .css
 AddType application/json .json
 
