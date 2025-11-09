@@ -380,9 +380,9 @@ Zie [QUICKSTART.md](./QUICKSTART.md) voor GitHub setup en [DEPLOYMENT.md](./DEPL
 
 ## 🔗 Links
 
-- 🌐 [Website](https://voxa-auris.nl)
+- 🌐 [Website](https://www.voxa-auris.com)
 - 🎨 [Lovable Project](https://lovable.dev/projects/4aa2acb1-70dc-4336-ba0a-897942004205)
-- 📚 [GitHub Repository](https://github.com/JOUW-USERNAME/voxa-auris-website)
+- 📚 [GitHub Repository](https://github.com/Voxa-Auris/Website)
 
 ## 📞 Support
 
