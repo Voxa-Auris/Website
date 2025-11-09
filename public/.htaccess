@@ -1,13 +1,11 @@
 # Voxa Auris - Apache Configuration for React SPA
 
 # MIME Types for JavaScript Modules (FIX for "application/octet-stream" error)
-<IfModule mod_mime.c>
-  AddType application/javascript .js
-  AddType application/javascript .mjs
-  AddType text/javascript .js
-  AddType text/css .css
-  AddType application/json .json
-</IfModule>
+AddType application/javascript .js
+AddType application/javascript .mjs
+AddType text/javascript .js
+AddType text/css .css
+AddType application/json .json
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
