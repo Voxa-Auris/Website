@@ -1,19 +1,30 @@
+import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import Benefits from "@/components/Benefits";
-import AIAgents from "@/components/AIAgents";
-import CTASection from "@/components/CTASection";
-import Footer from "@/components/Footer";
+import GoldenWindow from "@/components/GoldenWindow";
+
+// Lazy load below-the-fold components for better performance
+const HowItWorks = lazy(() => import("@/components/HowItWorks"));
+const Benefits = lazy(() => import("@/components/Benefits"));
+const AIAgents = lazy(() => import("@/components/AIAgents"));
+const SocialProof = lazy(() => import("@/components/SocialProof"));
+const CTASection = lazy(() => import("@/components/CTASection"));
+const Footer = lazy(() => import("@/components/Footer"));
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <Benefits />
-      <AIAgents />
-      <CTASection />
-      <Footer />
+      <GoldenWindow />
+      <Suspense fallback={<div className="min-h-screen" />}>
+        <HowItWorks />
+        <Benefits />
+        <AIAgents />
+        <SocialProof />
+        <CTASection />
+        <Footer />
+      </Suspense>
     </div>
   );
 };
