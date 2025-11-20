@@ -357,11 +357,11 @@ const Diensten = () => {
                   <h3 className="text-2xl font-bold mb-4 text-primary">
                     📱 Social Media Agent — Altijd zichtbaar
                   </h3>
-                  
+
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     De AI analyseert beste post-momenten, schrijft captions in jouw stijl en plaatst automatisch op al je kanalen.
                   </p>
-                  
+
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center gap-2 text-sm">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
@@ -377,12 +377,12 @@ const Diensten = () => {
                     </li>
                   </ul>
 
-                  <Button 
-                    size="lg" 
-                    onClick={handleStartRequest}
+                  <Button
+                    size="lg"
+                    onClick={() => window.location.href = '/probeer-social-agent'}
                     className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
                   >
-                    Start aanvraag
+                    Probeer nu!
                   </Button>
                 </div>
               </div>

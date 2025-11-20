@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Diensten from "./pages/Diensten";
 import Over from "./pages/Over";
 import Contact from "./pages/Contact";
+import ProbeerSocialAgent from "./pages/ProbeerSocialAgent";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/diensten" element={<Diensten />} />
           <Route path="/over" element={<Over />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/probeer-social-agent" element={<ProbeerSocialAgent />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
