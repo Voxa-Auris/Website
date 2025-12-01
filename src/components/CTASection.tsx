@@ -43,7 +43,7 @@ const CTASection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 glow-gold group" onClick={() => window.open('https://airtable.com/appYourFormId/shrYourFormId', '_blank')}>
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 glow-gold group" onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}>
               Ontvang binnen 1 minuut contact →
             </Button>
           </div>
