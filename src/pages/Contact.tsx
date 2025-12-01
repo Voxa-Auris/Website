@@ -2,9 +2,6 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
@@ -102,68 +99,17 @@ const Contact = () => {
             >
               <div className="p-8 rounded-2xl bg-card border border-border">
                 <h3 className="text-2xl font-bold mb-6">Stuur een bericht</h3>
-                
-                <form className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">
-                      Naam
-                    </label>
-                    <Input 
-                      placeholder="Jouw naam" 
-                      className="bg-background border-border"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium mb-2">
-                      Email
-                    </label>
-                    <Input 
-                      type="email" 
-                      placeholder="jouw@email.nl" 
-                      className="bg-background border-border"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium mb-2">
-                      Telefoon
-                    </label>
-                    <Input 
-                      type="tel" 
-                      placeholder="+31 6 1234 5678" 
-                      className="bg-background border-border"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium mb-2">
-                      Bericht
-                    </label>
-                    <Textarea 
-                      placeholder="Vertel ons over je situatie..."
-                      rows={5}
-                      className="bg-background border-border"
-                    />
-                  </div>
-                  
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6"
-                  >
-                    Verstuur bericht
-                  </Button>
-                  
-                  <p className="text-xs text-muted-foreground text-center">
-                    Of laat Alexander je bellen — vul je nummer in en we nemen binnen 24 uur contact op.
-                  </p>
-                </form>
-              </div>
-              
-              {/* Note about Airtable */}
-              <div className="mt-4 p-4 rounded-lg bg-muted/50 border border-border">
-                <p className="text-xs text-muted-foreground">
-                  📝 Dit formulier is een placeholder. In productie wordt hier een Airtable-formulier geïntegreerd.
+
+                {/* Embedded Airtable Form */}
+                <iframe
+                  className="airtable-embed w-full h-[600px] bg-transparent border-0"
+                  src="https://airtable.com/embed/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form"
+                  style={{ background: 'transparent', border: 'none' }}
+                  title="Lead Formulier"
+                />
+
+                <p className="text-xs text-muted-foreground text-center mt-4">
+                  Of laat Alexander je bellen — vul je nummer in en we nemen binnen 24 uur contact op.
                 </p>
               </div>
             </motion.div>
