@@ -35,7 +35,7 @@ const CTASection = () => {
           </h2>
           
           <p className="text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Laat je gegevens achter — onze AI-agent legt binnen 24 uur contact.
+            Laat je gegevens achter — onze AI-agent legt binnen 1 minuut contact.
           </p>
 
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -43,13 +43,16 @@ const CTASection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 glow-gold group" onClick={() => window.open('https://airtable.com/appYourFormId/shrYourFormId', '_blank')}>
-              Start aanvraag
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 glow-gold group" onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}>
+              Ontvang binnen 1 minuut contact →
             </Button>
           </div>
           
-          <p className="text-sm text-muted-foreground mt-8"> • Project op maat samengesteld</p>
+          <div className="flex flex-col gap-2 mt-8 text-sm text-muted-foreground">
+            <p>• Project op maat samengesteld</p>
+            <p>• Binnen 1 minuut eerste contact</p>
+            <p>• Volledig geautomatiseerd én persoonlijk opvolgsysteem</p>
+          </div>
         </motion.div>
       </div>
     </section>;

@@ -44,24 +44,26 @@ const Hero = () => {
             AI-agents die je klanten 24/7 te woord staan, leads kwalificeren en afspraken inplannen — zelfs wanneer jij slaapt.
           </motion.p>
           
-          <motion.div 
+          <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 glow-gold group"
+              onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
             >
               <Phone className="mr-2 group-hover:rotate-12 transition-transform" />
               Praat met Olivia
             </Button>
-            
-            <Button 
-              size="lg" 
-              variant="outline" 
+
+            <Button
+              size="lg"
+              variant="outline"
               className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground text-lg px-8 py-6 group"
+              onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
             >
               <Calendar className="mr-2 group-hover:scale-110 transition-transform" />
               Laat Alexander je bellen
