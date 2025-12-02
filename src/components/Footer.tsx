@@ -8,13 +8,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">V</span>
-              </div>
-              <span className="text-xl font-bold">
-                Voxa <span className="text-primary">Auris</span>
-              </span>
+            <div className="mb-4">
+              <img
+                src="/Voxa-auris Logo.jpg"
+                alt="Voxa Auris Logo"
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-sm text-muted-foreground">
               AI-automatisering die werkt terwijl jij groeit.

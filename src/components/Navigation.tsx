@@ -38,12 +38,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <span className="text-2xl font-bold text-primary">V</span>
-            </div>
-            <span className="text-xl font-bold hidden sm:block">
-              Voxa <span className="text-primary">Auris</span>
-            </span>
+            <img
+              src="/Voxa-auris Logo.jpg"
+              alt="Voxa Auris Logo"
+              className="h-10 w-auto group-hover:scale-105 transition-transform"
+            />
           </Link>
           
           {/* Desktop Navigation */}
