@@ -39,7 +39,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <img
-              src="/Voxa-auris Logo.jpg"
+              src="/Voxa Auris Logo Transparant.png"
               alt="Voxa Auris Logo"
               className="h-10 w-auto group-hover:scale-105 transition-transform"
             />
