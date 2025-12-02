@@ -21,7 +21,7 @@ const Index = () => {
         <HowItWorks />
         <Benefits />
         <AIAgents />
-        <SocialProof />
+        {/* <SocialProof /> Tijdelijk verborgen - nog geen klanten */}
         <CTASection />
         <Footer />
       </Suspense>

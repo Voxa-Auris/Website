@@ -22,6 +22,7 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "Diensten", path: "/diensten" },
     { name: "Over ons", path: "/over" },
+    { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
   
@@ -64,7 +65,10 @@ const Navigation = () => {
           
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+              onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
+            >
               Gratis demo
             </Button>
           </div>
@@ -103,7 +107,10 @@ const Navigation = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
+              >
                 Gratis demo
               </Button>
             </div>

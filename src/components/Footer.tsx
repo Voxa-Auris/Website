@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -41,6 +41,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </Link>
@@ -64,49 +69,50 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li>
-                <a 
-                  href="mailto:info@voxa-auris.com" 
+                <a
+                  href="mailto:Info@voxa-auris.com"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                 >
                   <Mail size={16} />
-                  info@voxa-auris.com
+                  Info@voxa-auris.com
                 </a>
               </li>
               <li>
-                <a 
-                  href="tel:+31123456789" 
+                <a
+                  href="tel:+3176205076"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                 >
                   <Phone size={16} />
-                  +31 12 345 6789
+                  +31 76 205 076
                 </a>
               </li>
+              <li className="text-sm text-muted-foreground flex items-center gap-2">
+                <MapPin size={16} />
+                Breda, Noord-Brabant
+              </li>
             </ul>
-            
-            {/* Social */}
-            <div className="flex gap-4 mt-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter size={20} />
-              </a>
-            </div>
           </div>
         </div>
         
         {/* Bottom */}
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Voxa Auris. Alle rechten voorbehouden.
-          </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Algemene Voorwaarden
-            </a>
+        <div className="pt-8 border-t border-border">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Voxa Auris. Alle rechten voorbehouden.
+            </p>
+            <div className="flex gap-6">
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Algemene Voorwaarden
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center text-xs text-muted-foreground">
+            <span>KVK: 89475216</span>
+            <span className="hidden md:inline">•</span>
+            <span>BTW: NL004733082B79</span>
           </div>
         </div>
       </div>
