@@ -56,29 +56,29 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Telefoon</h3>
-                    <p className="text-muted-foreground">+31 12 345 6789</p>
+                    <p className="text-muted-foreground">+31 76 205 076</p>
                     <p className="text-sm text-primary mt-1">Olivia neemt direct op</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">info@voxaauris.nl</p>
+                    <p className="text-muted-foreground">Info@voxa-auris.com</p>
                     <p className="text-sm text-secondary mt-1">Respons binnen 24 uur</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Locatie</h3>
-                    <p className="text-muted-foreground">Amsterdam, Nederland</p>
+                    <p className="text-muted-foreground">Breda, Noord-Brabant, Nederland</p>
                   </div>
                 </div>
               </div>

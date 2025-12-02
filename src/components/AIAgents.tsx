@@ -101,12 +101,13 @@ const AIAgents = () => {
                   </div>
                   
                   {/* CTA */}
-                  <Button 
+                  <Button
                     className={`w-full ${
-                      agent.name === "Alexander" 
-                        ? "bg-secondary text-secondary-foreground hover:bg-secondary/90" 
+                      agent.name === "Alexander"
+                        ? "bg-secondary text-secondary-foreground hover:bg-secondary/90"
                         : "bg-primary text-primary-foreground hover:bg-primary/90"
                     }`}
+                    onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
                   >
                     {agent.name === "Alexander" ? (
                       <>
