@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img
-                src="/Voxa-auris Logo.jpg"
+                src="/Voxa Auris Logo Transparant.png"
                 alt="Voxa Auris Logo"
                 className="h-12 w-auto"
               />
