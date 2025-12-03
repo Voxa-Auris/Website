@@ -1,0 +1,13 @@
+# Robots.txt voor Voxa Auris
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://voxaauris.nl/sitemap.xml
+
+# Disallow admin/private paths (als die er zijn)
+Disallow: /admin/
+Disallow: /_*
+
+# Crawl delay (optioneel)
+Crawl-delay: 1

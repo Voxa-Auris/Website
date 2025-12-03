@@ -1,17 +1,59 @@
 import { motion } from "framer-motion";
 import { Calendar, User, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
-// Placeholder blog posts - kan later worden vervangen met echte content
+// Blog posts
 const blogPosts = [
   {
-    title: "Coming Soon",
-    excerpt: "Binnenkort delen we hier inzichten over AI-automatisering, voice agents en hoe je leads effectiever opvolgt.",
-    date: "Binnenkort",
+    title: "Inbound Voice Agents - De Slimme AI-Receptioniste die Nooit een Klant Mist",
+    excerpt: "In een wereld waar klanten direct antwoord verwachten, kan één gemiste oproep het verschil betekenen tussen een nieuwe klant en een verloren kans. De Inbound Voice Agent verandert dat volledig.",
+    date: "2 december 2025",
     author: "Voxa Auris Team",
-    category: "AI & Automatisering",
+    category: "AI Voice Agents",
+    slug: "inbound-voice-agents",
+  },
+  {
+    title: "Outbound AI Agents - Nooit Meer een Lead Missen binnen de Golden 5-Minuten Window",
+    excerpt: "Iedere ondernemer kent het: een nieuwe lead vult een contactformulier in, en tegen de tijd dat je belt, heeft de concurrent al gereageerd. Dat is precies waar de Outbound AI Agents het verschil maken.",
+    date: "2 december 2025",
+    author: "Voxa Auris Team",
+    category: "AI Voice Agents",
+    slug: "outbound-ai-agents",
+  },
+  {
+    title: "AI Chatbots voor Bedrijven - 17 Krachtige Use Cases en Implementatietips",
+    excerpt: "Voor ondernemers die sneller willen groeien en tegelijk support-kosten willen verlagen, zijn AI Chatbots een slimme, schaalbare oplossing. Ze reageren direct, 24/7, in jouw tone of voice.",
+    date: "2 december 2025",
+    author: "Voxa Auris Team",
+    category: "AI Chatbots",
+    slug: "ai-chatbots",
+  },
+  {
+    title: "RAG Agents - De Slimste AI die Altijd Juiste Antwoorden Geeft",
+    excerpt: "AI kan geweldig zijn - tot het onzin gaat verzinnen. RAG Agents combineren taalintelligentie met jouw eigen bedrijfsdata. Zo krijg je AI die actuele, correcte en merkveilige antwoorden geeft.",
+    date: "2 december 2025",
+    author: "Voxa Auris Team",
+    category: "AI Technologie",
+    slug: "rag-agents",
+  },
+  {
+    title: "Social Media Agents - De AI Marketingassistent die 24/7 Post, Plant en Reageert",
+    excerpt: "Consistent posten op social media is belangrijk - maar in de praktijk schiet het er vaak bij in. De Social Media Agents van Voxa Auris zorgen ervoor dat je merk altijd actief en zichtbaar blijft.",
+    date: "2 december 2025",
+    author: "Voxa Auris Team",
+    category: "Marketing Automatisering",
+    slug: "social-media-agents",
+  },
+  {
+    title: "Lead Scrape Agents - De Slimme AI die Nieuwe Leads Zoekt, Verrijkt en Doorstuurt",
+    excerpt: "Iedere ondernemer wil meer leads - maar niemand heeft tijd om ze handmatig te zoeken. Lead Scrape Agents vinden, filteren en verrijken automatisch nieuwe leads die passen bij jouw doelgroep.",
+    date: "2 december 2025",
+    author: "Voxa Auris Team",
+    category: "Lead Generatie",
+    slug: "lead-scrape-agents",
   },
 ];
 
@@ -88,44 +130,20 @@ const Blog = () => {
                       </div>
                     </div>
 
-                    {/* CTA - Disabled for now */}
-                    <Button
-                      variant="outline"
-                      className="w-full group-hover:border-primary group-hover:text-primary transition-colors"
-                      disabled
-                    >
-                      Lees meer
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                    {/* CTA */}
+                    <Link to={`/blog/${post.slug}`}>
+                      <Button
+                        variant="outline"
+                        className="w-full group-hover:border-primary group-hover:text-primary transition-colors"
+                      >
+                        Lees meer
+                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
                   </div>
                 </motion.article>
               ))}
             </div>
-
-            {/* Coming Soon Message */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="mt-16 text-center"
-            >
-              <div className="p-8 rounded-2xl bg-card border border-border max-w-2xl mx-auto">
-                <h3 className="text-2xl font-bold mb-4 text-primary">
-                  Meer content volgt binnenkort
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  We werken aan waardevolle content over AI-automatisering, best practices en praktijkvoorbeelden.
-                  Schrijf je in voor onze nieuwsbrief om op de hoogte te blijven.
-                </p>
-                <Button
-                  className="bg-primary text-primary-foreground hover:bg-primary/90"
-                  onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
-                >
-                  Blijf op de hoogte
-                </Button>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
