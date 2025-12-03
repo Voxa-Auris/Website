@@ -104,7 +104,7 @@ const HowItWorks = () => {
           className="text-center mt-20"
         >
           <Button
-            onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
+            onClick={() => window.location.href = 'tel:+31762057076'}
             className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 hover:from-primary/30 hover:to-secondary/30 transition-all duration-300"
             variant="outline"
           >
@@ -112,7 +112,7 @@ const HowItWorks = () => {
               <div className="w-8 h-8 rounded-full bg-primary border-2 border-background flex items-center justify-center text-xs font-bold">A</div>
               <div className="w-8 h-8 rounded-full bg-secondary border-2 border-background flex items-center justify-center text-xs font-bold">O</div>
             </div>
-            <span className="text-sm font-medium">Alexander & Olivia staan klaar om je leads op te volgen</span>
+            <span className="text-sm font-medium">Bel Olivia direct - wij staan klaar</span>
           </Button>
         </motion.div>
       </div>

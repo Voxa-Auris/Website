@@ -53,10 +53,10 @@ const Hero = () => {
             <Button
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 glow-gold group"
-              onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
+              onClick={() => window.location.href = 'tel:+31762057076'}
             >
               <Phone className="mr-2 group-hover:rotate-12 transition-transform" />
-              Praat met Olivia
+              Bel Olivia direct
             </Button>
 
             <Button
