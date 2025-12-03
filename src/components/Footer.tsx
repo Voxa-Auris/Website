@@ -12,7 +12,7 @@ const Footer = () => {
               <img
                 src="/Voxa Auris Logo Transparant.png"
                 alt="Voxa Auris Logo"
-                className="h-20 w-auto"
+                className="h-24 w-auto"
               />
             </div>
             <p className="text-sm text-muted-foreground">
@@ -78,11 +78,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="tel:+3176205076"
+                  href="tel:+31762057076"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                 >
                   <Phone size={16} />
-                  +31 76 205 076
+                  +31 76 205 7076
                 </a>
               </li>
               <li className="text-sm text-muted-foreground flex items-center gap-2">

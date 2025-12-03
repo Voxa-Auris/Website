@@ -41,7 +41,7 @@ const Navigation = () => {
             <img
               src="/Voxa Auris Logo Transparant.png"
               alt="Voxa Auris Logo"
-              className="h-16 w-auto group-hover:scale-105 transition-transform"
+              className="h-20 w-auto group-hover:scale-105 transition-transform"
             />
           </Link>
           
