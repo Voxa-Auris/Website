@@ -90,58 +90,62 @@ const Blog = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
-                <motion.article
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="group"
-                >
-                  <div className="relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <Link key={index} to={`/blog/${post.slug}`} className="block">
+                  <motion.article
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="group h-full"
+                  >
+                    <div className="relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 h-full flex flex-col cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                    <div className="relative flex-1">
-                      {/* Category */}
-                      <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4">
-                        {post.category}
+                      <div className="relative flex-1">
+                        {/* Category */}
+                        <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4">
+                          {post.category}
+                        </div>
+
+                        {/* Title */}
+                        <h2 className="text-2xl font-bold mb-4 text-primary group-hover:text-primary/80 transition-colors">
+                          {post.title}
+                        </h2>
+
+                        {/* Excerpt */}
+                        <p className="text-muted-foreground leading-relaxed mb-6">
+                          {post.excerpt}
+                        </p>
+
+                        {/* Meta */}
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
+                          <div className="flex items-center gap-2">
+                            <Calendar size={16} />
+                            <span>{post.date}</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <User size={16} />
+                            <span>{post.author}</span>
+                          </div>
+                        </div>
                       </div>
 
-                      {/* Title */}
-                      <h2 className="text-2xl font-bold mb-4 text-primary group-hover:text-primary/80 transition-colors">
-                        {post.title}
-                      </h2>
-
-                      {/* Excerpt */}
-                      <p className="text-muted-foreground leading-relaxed mb-6">
-                        {post.excerpt}
-                      </p>
-
-                      {/* Meta */}
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
-                        <div className="flex items-center gap-2">
-                          <Calendar size={16} />
-                          <span>{post.date}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <User size={16} />
-                          <span>{post.author}</span>
-                        </div>
+                      {/* CTA */}
+                      <div className="relative w-full">
+                        <Button
+                          variant="outline"
+                          className="w-full group-hover:border-primary group-hover:text-primary transition-colors"
+                          asChild
+                        >
+                          <div className="flex items-center justify-center">
+                            Lees meer
+                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                          </div>
+                        </Button>
                       </div>
                     </div>
-
-                    {/* CTA */}
-                    <Link to={`/blog/${post.slug}`}>
-                      <Button
-                        variant="outline"
-                        className="w-full group-hover:border-primary group-hover:text-primary transition-colors"
-                      >
-                        Lees meer
-                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </Link>
-                  </div>
-                </motion.article>
+                  </motion.article>
+                </Link>
               ))}
             </div>
           </div>
