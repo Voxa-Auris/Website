@@ -3,7 +3,6 @@ import Navigation from "@/components/Navigation";
 import HeroSplit from "@/components/HeroSplit";
 import GoldenWindow from "@/components/GoldenWindow";
 
-// Lazy load below-the-fold components for better performance
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
 const Benefits = lazy(() => import("@/components/Benefits"));
 const AIAgents = lazy(() => import("@/components/AIAgents"));
@@ -11,19 +10,19 @@ const SocialProof = lazy(() => import("@/components/SocialProof"));
 const CTASection = lazy(() => import("@/components/CTASection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
-const Index = () => {
+const Vastgoed = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <HeroSplit
-        headline="De receptioniste die nooit ziek is."
-        subheadline="Jouw AI-assistent beantwoordt vragen, kwalificeert leads en plant afspraken in — terwijl jij focust op waar je écht goed in bent."
-        challengeTitle="Ervaar de snelheid zelf."
-        testInstruction="Bel en vraag: 'Wat zijn jullie tarieven en kunnen jullie koppelen met mijn agenda?' Let op de reactiesnelheid."
+        headline="Verkoop huizen terwijl je slaapt."
+        subheadline="Onze AI-assistent plant bezichtigingen in, beantwoordt vragen over woningen en kwalificeert kopers — zelfs om 22:00 's avonds of in het weekend."
+        challengeTitle="Probeer een bezichtiging te plannen."
+        testInstruction="Bel en zeg: 'Ik heb interesse in de woning op de Kerkstraat 12. Kan ik morgen komen kijken?' Kijk hoe de AI dit afhandelt."
         benefits={[
-          "24/7 Bereikbaar voor jouw klanten",
-          "Koppelt met CRM en agenda",
-          "Klinkt als een mens, niet als een robot"
+          "24/7 Bereikbaar voor potentiële kopers",
+          "Automatische bezichtigingen plannen",
+          "Professioneel en vriendelijk contact"
         ]}
       />
       <GoldenWindow />
@@ -39,4 +38,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Vastgoed;

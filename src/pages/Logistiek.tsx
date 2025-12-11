@@ -3,7 +3,6 @@ import Navigation from "@/components/Navigation";
 import HeroSplit from "@/components/HeroSplit";
 import GoldenWindow from "@/components/GoldenWindow";
 
-// Lazy load below-the-fold components for better performance
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
 const Benefits = lazy(() => import("@/components/Benefits"));
 const AIAgents = lazy(() => import("@/components/AIAgents"));
@@ -11,19 +10,19 @@ const SocialProof = lazy(() => import("@/components/SocialProof"));
 const CTASection = lazy(() => import("@/components/CTASection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
-const Index = () => {
+const Logistiek = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <HeroSplit
-        headline="De receptioniste die nooit ziek is."
-        subheadline="Jouw AI-assistent beantwoordt vragen, kwalificeert leads en plant afspraken in — terwijl jij focust op waar je écht goed in bent."
-        challengeTitle="Ervaar de snelheid zelf."
-        testInstruction="Bel en vraag: 'Wat zijn jullie tarieven en kunnen jullie koppelen met mijn agenda?' Let op de reactiesnelheid."
+        headline="De eerste Planning die nooit pauze neemt."
+        subheadline="Jouw chauffeurs krijgen direct antwoord op hun vragen. Onze AI-planner handelt statusupdates, pauzes en vertraging af — 24/7, zonder menselijke tussenkomst."
+        challengeTitle="Daag onze Planner uit."
+        testInstruction="Bel en zeg: 'Ik ben chauffeur Jan en mijn vrachtwagen staat met pech langs de A16.' Kijk hoe de AI reageert."
         benefits={[
-          "24/7 Bereikbaar voor jouw klanten",
-          "Koppelt met CRM en agenda",
-          "Klinkt als een mens, niet als een robot"
+          "24/7 Bereikbaar voor al je chauffeurs",
+          "Directe updates in je planningssysteem",
+          "Natuurlijke gesprekken, geen robotstem"
         ]}
       />
       <GoldenWindow />
@@ -39,4 +38,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Logistiek;
