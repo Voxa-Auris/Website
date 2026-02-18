@@ -40,11 +40,11 @@ const HowItWorks = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 glow-text">
-            Hoe het
-            <span className="text-primary block mt-2">werkt</span>
+            Zo werkt
+            <span className="text-primary block mt-2">het</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Van lead tot afspraak in 3 simpele stappen — volledig geautomatiseerd
+            Van lead tot afspraak, zonder dat jij er iets voor hoeft te doen.
           </p>
         </motion.div>
 
@@ -105,9 +105,8 @@ const HowItWorks = () => {
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30">
             <div className="flex -space-x-2">
               <div className="w-8 h-8 rounded-full bg-primary border-2 border-background flex items-center justify-center text-xs font-bold">A</div>
-              <div className="w-8 h-8 rounded-full bg-secondary border-2 border-background flex items-center justify-center text-xs font-bold">O</div>
             </div>
-            <span className="text-sm font-medium">Alexander & Olivia staan klaar om je leads op te volgen</span>
+            <span className="text-sm font-medium">Alexander staat klaar om je leads op te volgen</span>
           </div>
         </motion.div>
       </div>

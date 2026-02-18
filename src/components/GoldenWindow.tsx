@@ -39,11 +39,11 @@ const GoldenWindow = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 glow-text">
-            Waarom AI-opvolging
-            <span className="text-primary block mt-2">werkt</span>
+            Waarom snelheid
+            <span className="text-primary block mt-2">alles bepaalt</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Het 'Golden Window' principe: de eerste minuten na een lead bepalen je succes
+            De meeste bedrijven verliezen leads niet door een slecht product. Ze verliezen ze omdat ze te laat reageren.
           </p>
         </motion.div>
 
