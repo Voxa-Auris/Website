@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Calendar } from "lucide-react";
+import { Calendar, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import AIBall from "./AIBall";
 
@@ -25,27 +25,27 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <motion.h1 
+          <motion.h1
             className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 glow-text"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Jouw bedrijf,
-            <span className="text-primary block mt-2">altijd bereikbaar</span>
+            Elke lead die je te laat opvolgt,
+            <span className="text-primary block mt-2">gaat naar je concurrent.</span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            AI-agents die je klanten 24/7 te woord staan, leads kwalificeren en afspraken inplannen — zelfs wanneer jij slaapt.
+            De eerste 5 minuten na een lead bepalen of jij de opdracht krijgt of de buurman. Onze AI belt automatisch terug binnen 60 seconden, ook om 23:00.
           </motion.p>
-          
+
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-wrap justify-center items-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -69,14 +69,14 @@ const Hero = () => {
               Laat Alexander je bellen
             </Button>
           </motion.div>
-          
-          <motion.p 
+
+          <motion.p
             className="text-sm text-muted-foreground mt-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            🤖 AI-aangedreven • ⚡ Binnen 2 weken operationeel • 📞 Geen wachttijd voor leads
+            🤖 AI-aangedreven. ⚡ Binnen 2 weken live. 📞 Geen gemiste leads meer.
           </motion.p>
         </motion.div>
       </div>

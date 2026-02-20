@@ -36,7 +36,7 @@ const AIAgents = () => {
     <section className="py-24 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ const AIAgents = () => {
             <Brain className="w-4 h-4" />
             <span className="text-sm font-semibold">Ontmoet onze AI-agents</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
             Alexander & Olivia
           </h2>
@@ -57,7 +57,7 @@ const AIAgents = () => {
             Jouw digitale team dat nooit pauze neemt ☕
           </p>
         </motion.div>
-        
+
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {agents.map((agent, index) => (
             <motion.div
@@ -70,13 +70,13 @@ const AIAgents = () => {
             >
               <div className="relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 <div className="relative">
                   {/* Agent Icon */}
                   <div className={`w-20 h-20 rounded-2xl bg-${agent.color}/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <agent.icon className={`w-10 h-10 text-${agent.color}`} />
                   </div>
-                  
+
                   {/* Agent Info */}
                   <div className="mb-6">
                     <h3 className="text-3xl font-bold mb-2 text-primary">
@@ -89,7 +89,7 @@ const AIAgents = () => {
                       {agent.description}
                     </p>
                   </div>
-                  
+
                   {/* Features */}
                   <div className="space-y-3 mb-6">
                     {agent.features.map((feature) => (
@@ -99,7 +99,7 @@ const AIAgents = () => {
                       </div>
                     ))}
                   </div>
-                  
+
                   {/* CTA */}
                   <Button
                     className={`w-full ${

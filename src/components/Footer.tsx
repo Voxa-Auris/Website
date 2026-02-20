@@ -19,7 +19,7 @@ const Footer = () => {
               AI-automatisering die werkt terwijl jij groeit.
             </p>
           </div>
-          
+
           {/* Links */}
           <div>
             <h3 className="font-semibold mb-4">Navigatie</h3>
@@ -51,25 +51,25 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Services */}
           <div>
             <h3 className="font-semibold mb-4">Diensten</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">AI Voice Agents</li>
+              <li className="text-sm text-muted-foreground">AI Voice Agent</li>
               <li className="text-sm text-muted-foreground">Lead Kwalificatie</li>
               <li className="text-sm text-muted-foreground">Workflow Automatisering</li>
               <li className="text-sm text-muted-foreground">CRM Integratie</li>
             </ul>
           </div>
-          
+
           {/* Contact */}
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="mailto:Info@voxa-auris.com"
+                  href="mailto:info@voxa-auris.com"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                 >
                   <Mail size={16} />
@@ -92,7 +92,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         {/* Bottom */}
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
