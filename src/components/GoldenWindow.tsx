@@ -85,7 +85,7 @@ const GoldenWindow = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">100x</div>
-              <div className="text-sm text-muted-foreground">Hogere conversie binnen 5 minuten</div>
+              <div className="text-sm text-muted-foreground">Hogere kans om de lead te pakken te krijgen</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">78%</div>
