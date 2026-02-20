@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { UserPlus, PhoneCall, Calendar } from "lucide-react";
+import { Button } from "./ui/button";
 
 const HowItWorks = () => {
   const steps = [
@@ -102,12 +103,16 @@ const HowItWorks = () => {
           viewport={{ once: true }}
           className="text-center mt-20"
         >
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30">
+          <Button
+            onClick={() => window.location.href = 'tel:+31762057076'}
+            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 hover:from-primary/30 hover:to-secondary/30 transition-all duration-300"
+            variant="outline"
+          >
             <div className="flex -space-x-2">
               <div className="w-8 h-8 rounded-full bg-primary border-2 border-background flex items-center justify-center text-xs font-bold">A</div>
             </div>
-            <span className="text-sm font-medium">Alexander staat klaar om je leads op te volgen</span>
-          </div>
+            <span className="text-sm font-medium">Bel Olivia direct - wij staan klaar</span>
+          </Button>
         </motion.div>
       </div>
     </section>

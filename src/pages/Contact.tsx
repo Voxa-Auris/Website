@@ -56,7 +56,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Telefoon</h3>
-                    <p className="text-muted-foreground">[TELEFOONNUMMER INVULLEN]</p>
+                    <a href="tel:+31762057076" className="text-muted-foreground hover:text-primary transition-colors">
+                      +31 76 205 7076
+                    </a>
+                    <p className="text-sm text-primary mt-1">
+                      <a href="tel:+31762057076" className="hover:underline">Bel Olivia direct</a>
+                    </p>
                   </div>
                 </div>
 
@@ -72,7 +77,7 @@ const Contact = () => {
                     >
                       info@voxa-auris.com
                     </a>
-                    <p className="text-sm text-secondary mt-1">Respons binnen 1 werkdag</p>
+                    <p className="text-sm text-secondary mt-1">Respons binnen 24 uur</p>
                   </div>
                 </div>
 
@@ -82,7 +87,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Locatie</h3>
-                    <p className="text-muted-foreground">Amsterdam, Nederland</p>
+                    <p className="text-muted-foreground">Breda, Noord-Brabant, Nederland</p>
                   </div>
                 </div>
               </div>

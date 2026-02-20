@@ -22,6 +22,7 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "Diensten", path: "/diensten" },
     { name: "Over ons", path: "/over" },
+    { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
   
@@ -37,12 +38,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <span className="text-2xl font-bold text-primary">V</span>
-            </div>
-            <span className="text-xl font-bold hidden sm:block">
-              Voxa <span className="text-primary">Auris</span>
-            </span>
+            <img
+              src="/Voxa Auris Logo Transparant.png"
+              alt="Voxa Auris Logo"
+              className="h-24 w-auto group-hover:scale-105 transition-transform"
+            />
           </Link>
           
           {/* Desktop Navigation */}
@@ -64,7 +64,10 @@ const Navigation = () => {
           
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+              onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
+            >
               Gratis demo
             </Button>
           </div>
@@ -103,7 +106,10 @@ const Navigation = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
+              >
                 Gratis demo
               </Button>
             </div>

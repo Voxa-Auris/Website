@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,13 +8,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">V</span>
-              </div>
-              <span className="text-xl font-bold">
-                Voxa <span className="text-primary">Auris</span>
-              </span>
+            <div className="mb-4">
+              <img
+                src="/Voxa Auris Logo Transparant.png"
+                alt="Voxa Auris Logo"
+                className="h-32 w-auto"
+              />
             </div>
             <p className="text-sm text-muted-foreground">
               AI-automatisering die werkt terwijl jij groeit.
@@ -38,6 +37,11 @@ const Footer = () => {
               <li>
                 <Link to="/over" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Over ons
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Blog
                 </Link>
               </li>
               <li>
@@ -69,31 +73,45 @@ const Footer = () => {
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                 >
                   <Mail size={16} />
-                  info@voxa-auris.com
+                  Info@voxa-auris.com
                 </a>
               </li>
               <li>
-                <span className="text-sm text-muted-foreground flex items-center gap-2">
+                <a
+                  href="tel:+31762057076"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+                >
                   <Phone size={16} />
-                  [TELEFOONNUMMER INVULLEN]
-                </span>
+                  +31 76 205 7076
+                </a>
+              </li>
+              <li className="text-sm text-muted-foreground flex items-center gap-2">
+                <MapPin size={16} />
+                Breda, Noord-Brabant
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Voxa Auris. Alle rechten voorbehouden.
-          </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Algemene Voorwaarden
-            </a>
+        <div className="pt-8 border-t border-border">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Voxa Auris. Alle rechten voorbehouden.
+            </p>
+            <div className="flex gap-6">
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Algemene Voorwaarden
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center text-xs text-muted-foreground">
+            <span>KVK: 89475216</span>
+            <span className="hidden md:inline">•</span>
+            <span>BTW: NL004733082B79</span>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import GoldenWindow from "@/components/GoldenWindow";
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
 const Benefits = lazy(() => import("@/components/Benefits"));
 const AIAgents = lazy(() => import("@/components/AIAgents"));
-const SocialProof = lazy(() => import("@/components/SocialProof"));
+// const SocialProof = lazy(() => import("@/components/SocialProof")); // Tijdelijk uitgeschakeld
 const CTASection = lazy(() => import("@/components/CTASection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -21,7 +21,7 @@ const Index = () => {
         <HowItWorks />
         <Benefits />
         <AIAgents />
-        <SocialProof />
+        {/* <SocialProof /> Tijdelijk verborgen - nog geen klanten */}
         <CTASection />
         <Footer />
       </Suspense>
