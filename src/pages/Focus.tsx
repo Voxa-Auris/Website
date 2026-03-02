@@ -1,12 +1,71 @@
 import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
-import { Plus, Check, Trash2, Zap, Flame } from "lucide-react";
+import { Plus, Check, Trash2, Zap, Flame, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { useFocusStore } from "@/hooks/useFocusStore";
+
+const PASSWORD = "FocusSeason";
+const AUTH_KEY = "voxa_focus_auth";
+
+function PasswordGate({ onUnlock }: { onUnlock: () => void }) {
+  const [value, setValue] = useState("");
+  const [error, setError] = useState(false);
+
+  const handleSubmit = () => {
+    if (value === PASSWORD) {
+      localStorage.setItem(AUTH_KEY, "1");
+      onUnlock();
+    } else {
+      setError(true);
+      setValue("");
+      setTimeout(() => setError(false), 2000);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-background flex items-center justify-center px-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="w-full max-w-sm space-y-6 text-center"
+      >
+        <div className="flex justify-center">
+          <div className="w-16 h-16 rounded-2xl bg-[#11b4eb]/10 border border-[#11b4eb]/30 flex items-center justify-center">
+            <Lock size={28} className="text-[#11b4eb]" />
+          </div>
+        </div>
+        <div>
+          <h1 className="text-2xl font-bold">Focus Tool</h1>
+          <p className="text-muted-foreground text-sm mt-1">Voer het wachtwoord in</p>
+        </div>
+        <div className="space-y-3">
+          <Input
+            type="password"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSubmit()}
+            placeholder="Wachtwoord..."
+            className={`text-center bg-card border-border focus-visible:ring-[#11b4eb] ${error ? "border-red-500" : ""}`}
+            autoFocus
+          />
+          {error && (
+            <p className="text-red-500 text-sm">Onjuist wachtwoord</p>
+          )}
+          <Button
+            onClick={handleSubmit}
+            className="w-full bg-[#11b4eb] hover:bg-[#11b4eb]/90 text-white"
+          >
+            Inloggen
+          </Button>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
 
 // Dutch day/month names
 const DAYS = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"];
@@ -35,6 +94,16 @@ interface PointsPopup {
 }
 
 export default function Focus() {
+  const [isAuthed, setIsAuthed] = useState(() => localStorage.getItem(AUTH_KEY) === "1");
+
+  if (!isAuthed) {
+    return <PasswordGate onUnlock={() => setIsAuthed(true)} />;
+  }
+
+  return <FocusApp />;
+}
+
+function FocusApp() {
   const { state, todayTasks, completedTodayCount, addTask, completeTask, deleteTask, getStreakBadge, today } =
     useFocusStore();
 
