@@ -24,6 +24,7 @@ const Navigation = () => {
     { name: "Over ons", path: "/over" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
+    { name: "🎯 Focus", path: "/focus", hidden: true },
   ];
   
   return (
@@ -47,13 +48,13 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {navLinks.filter((l) => !l.hidden).map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname === link.path 
-                    ? "text-primary" 
+                  location.pathname === link.path
+                    ? "text-primary"
                     : "text-muted-foreground"
                 }`}
               >
@@ -92,14 +93,14 @@ const Navigation = () => {
             className="md:hidden bg-background/95 backdrop-blur-lg border-b border-border"
           >
             <div className="container mx-auto px-4 py-6 space-y-4">
-              {navLinks.map((link) => (
+              {navLinks.filter((l) => !l.hidden).map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`block py-2 text-base font-medium transition-colors hover:text-primary ${
-                    location.pathname === link.path 
-                      ? "text-primary" 
+                    location.pathname === link.path
+                      ? "text-primary"
                       : "text-muted-foreground"
                   }`}
                 >
