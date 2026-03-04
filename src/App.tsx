@@ -9,6 +9,7 @@ import Over from "./pages/Over";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Focus from "./pages/Focus";
+import Installatiebedrijven from "./pages/Installatiebedrijven";
 import NotFound from "./pages/NotFound";
 
 // Blog posts
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/blog/lead-scrape-agents" element={<LeadScrapeAgents />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/focus" element={<Focus />} />
+          <Route path="/installatiebedrijven" element={<Installatiebedrijven />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
