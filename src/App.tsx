@@ -10,6 +10,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Focus from "./pages/Focus";
 import Installatiebedrijven from "./pages/Installatiebedrijven";
+import Woningverbetering from "./pages/Woningverbetering";
 import NotFound from "./pages/NotFound";
 
 // Blog posts
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/focus" element={<Focus />} />
           <Route path="/installatiebedrijven" element={<Installatiebedrijven />} />
+          <Route path="/woningverbetering" element={<Woningverbetering />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
