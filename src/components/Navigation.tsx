@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,6 +8,7 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   
   useEffect(() => {
     const handleScroll = () => {
@@ -67,7 +68,7 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Button
               className="bg-primary text-primary-foreground hover:bg-primary/90"
-              onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
+              onClick={() => navigate("/gratis-demo")}
             >
               Gratis demo
             </Button>
@@ -109,7 +110,7 @@ const Navigation = () => {
               ))}
               <Button
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-                onClick={() => window.open('https://airtable.com/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form', '_blank')}
+                onClick={() => navigate("/gratis-demo")}
               >
                 Gratis demo
               </Button>

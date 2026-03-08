@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Focus from "./pages/Focus";
 import Installatiebedrijven from "./pages/Installatiebedrijven";
 import Woningverbetering from "./pages/Woningverbetering";
+import GratisDemoPage from "./pages/GratisDemoPage";
 import NotFound from "./pages/NotFound";
 
 // Blog posts
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/focus" element={<Focus />} />
           <Route path="/installatiebedrijven" element={<Installatiebedrijven />} />
           <Route path="/woningverbetering" element={<Woningverbetering />} />
+          <Route path="/gratis-demo" element={<GratisDemoPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
