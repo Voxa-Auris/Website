@@ -124,8 +124,8 @@ const GratisDemoPage = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-6xl font-bold mb-6 glow-text leading-tight"
           >
-            Hoor hoe jouw
-            <span className="text-primary block mt-2">AI-receptionist klinkt</span>
+            Hoor hoe het klinkt als jij
+            <span className="text-primary block mt-2">geen leads meer mist</span>
           </motion.h1>
 
           <motion.p
