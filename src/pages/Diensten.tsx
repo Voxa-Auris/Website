@@ -11,7 +11,7 @@ const Diensten = () => {
 
   const deliverables = [
     "AI voice agent op maat voor jouw bedrijf",
-    "Volledig ingesteld CRM systeem",
+    "Volledig ingesteld CRM systeem — of naadloos geïntegreerd in jouw eigen CRM",
     "Automatische opvolging van leads",
     "Transcripten en samenvattingen van elk gesprek",
     "Dashboard zodat je altijd weet wat er speelt",

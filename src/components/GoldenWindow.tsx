@@ -6,7 +6,7 @@ const GoldenWindow = () => {
     {
       icon: Clock,
       title: "De eerste 5 minuten zijn cruciaal",
-      description: "Leads die binnen 5 minuten contact krijgen zijn 100x waarschijnlijker om klant te worden."
+      description: "Leads die binnen 5 minuten contact krijgen zijn 100x waarschijnlijker om op te nemen."
     },
     {
       icon: TrendingUp,
