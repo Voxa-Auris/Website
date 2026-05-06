@@ -2,12 +2,13 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
-import Diensten from "./pages/Diensten";
+import Aanpak from "./pages/Aanpak";
 import Over from "./pages/Over";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
 import Focus from "./pages/Focus";
 import Installatiebedrijven from "./pages/Installatiebedrijven";
 import Woningverbetering from "./pages/Woningverbetering";
@@ -32,7 +33,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/diensten" element={<Diensten />} />
+          <Route path="/aanpak" element={<Aanpak />} />
+          <Route path="/diensten" element={<Navigate to="/aanpak" replace />} />
           <Route path="/over" element={<Over />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/inbound-voice-agents" element={<InboundVoiceAgents />} />
@@ -42,6 +44,7 @@ const App = () => (
           <Route path="/blog/social-media-agents" element={<SocialMediaAgents />} />
           <Route path="/blog/lead-scrape-agents" element={<LeadScrapeAgents />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/focus" element={<Focus />} />
           <Route path="/installatiebedrijven" element={<Installatiebedrijven />} />
           <Route path="/woningverbetering" element={<Woningverbetering />} />

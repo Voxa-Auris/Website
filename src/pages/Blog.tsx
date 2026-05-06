@@ -1,160 +1,170 @@
-import { motion } from "framer-motion";
-import { Calendar, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
+import PageShell from "@/components/site/PageShell";
 
-// Blog posts
-const blogPosts = [
+const posts = [
   {
-    title: "Inbound Voice Agents - De Slimme AI-Receptioniste die Nooit een Klant Mist",
-    excerpt: "In een wereld waar klanten direct antwoord verwachten, kan één gemiste oproep het verschil betekenen tussen een nieuwe klant en een verloren kans. De Inbound Voice Agent verandert dat volledig.",
+    title: "Inbound Voice Agents — De slimme AI-receptioniste die nooit een klant mist",
+    excerpt:
+      "In een wereld waar klanten direct antwoord verwachten, kan één gemiste oproep het verschil betekenen tussen een nieuwe klant en een verloren kans.",
     date: "2 december 2025",
-    author: "Voxa Auris Team",
-    category: "AI Voice Agents",
+    category: "Voice agents",
     slug: "inbound-voice-agents",
   },
   {
-    title: "Outbound AI Agents - Nooit Meer een Lead Missen binnen de Golden 5-Minuten Window",
-    excerpt: "Iedere ondernemer kent het: een nieuwe lead vult een contactformulier in, en tegen de tijd dat je belt, heeft de concurrent al gereageerd. Dat is precies waar de Outbound AI Agents het verschil maken.",
+    title:
+      "Outbound AI Agents — Nooit meer een lead missen binnen de golden 5-minuten window",
+    excerpt:
+      "Een nieuwe lead vult een contactformulier in. Tegen de tijd dat je belt, heeft de concurrent al gereageerd. Daar maakt de Outbound AI het verschil.",
     date: "2 december 2025",
-    author: "Voxa Auris Team",
-    category: "AI Voice Agents",
+    category: "Voice agents",
     slug: "outbound-ai-agents",
   },
   {
-    title: "AI Chatbots voor Bedrijven - 17 Krachtige Use Cases en Implementatietips",
-    excerpt: "Voor ondernemers die sneller willen groeien en tegelijk support-kosten willen verlagen, zijn AI Chatbots een slimme, schaalbare oplossing. Ze reageren direct, 24/7, in jouw tone of voice.",
+    title: "AI Chatbots voor bedrijven — 17 krachtige use cases en implementatietips",
+    excerpt:
+      "Voor ondernemers die sneller willen groeien en tegelijk support-kosten willen verlagen, zijn AI chatbots een slimme, schaalbare oplossing.",
     date: "2 december 2025",
-    author: "Voxa Auris Team",
-    category: "AI Chatbots",
+    category: "Chatbots",
     slug: "ai-chatbots",
   },
   {
-    title: "RAG Agents - De Slimste AI die Altijd Juiste Antwoorden Geeft",
-    excerpt: "AI kan geweldig zijn - tot het onzin gaat verzinnen. RAG Agents combineren taalintelligentie met jouw eigen bedrijfsdata. Zo krijg je AI die actuele, correcte en merkveilige antwoorden geeft.",
+    title: "RAG Agents — De slimste AI die altijd juiste antwoorden geeft",
+    excerpt:
+      "AI kan geweldig zijn — tot het onzin gaat verzinnen. RAG Agents combineren taalintelligentie met jouw eigen bedrijfsdata.",
     date: "2 december 2025",
-    author: "Voxa Auris Team",
-    category: "AI Technologie",
+    category: "Technologie",
     slug: "rag-agents",
   },
   {
-    title: "Social Media Agents - De AI Marketingassistent die 24/7 Post, Plant en Reageert",
-    excerpt: "Consistent posten op social media is belangrijk - maar in de praktijk schiet het er vaak bij in. De Social Media Agents van Voxa Auris zorgen ervoor dat je merk altijd actief en zichtbaar blijft.",
+    title:
+      "Social Media Agents — De AI marketingassistent die 24/7 post, plant en reageert",
+    excerpt:
+      "Consistent posten op social media is belangrijk — maar in de praktijk schiet het er vaak bij in. Social Media Agents nemen het over.",
     date: "2 december 2025",
-    author: "Voxa Auris Team",
-    category: "Marketing Automatisering",
+    category: "Marketing",
     slug: "social-media-agents",
   },
   {
-    title: "Lead Scrape Agents - De Slimme AI die Nieuwe Leads Zoekt, Verrijkt en Doorstuurt",
-    excerpt: "Iedere ondernemer wil meer leads - maar niemand heeft tijd om ze handmatig te zoeken. Lead Scrape Agents vinden, filteren en verrijken automatisch nieuwe leads die passen bij jouw doelgroep.",
+    title: "Lead Scrape Agents — De slimme AI die nieuwe leads zoekt, verrijkt en doorstuurt",
+    excerpt:
+      "Iedere ondernemer wil meer leads — maar niemand heeft tijd om ze handmatig te zoeken. Lead Scrape Agents vinden en verrijken automatisch.",
     date: "2 december 2025",
-    author: "Voxa Auris Team",
-    category: "Lead Generatie",
+    category: "Lead generatie",
     slug: "lead-scrape-agents",
   },
 ];
 
-const Blog = () => {
+export default function Blog() {
   return (
-    <div className="min-h-screen">
-      <Navigation />
-
-      {/* Hero */}
-      <section className="pt-32 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-
-        <div className="container mx-auto px-4 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 glow-text">
-              Voxa Auris <span className="text-primary">Blog</span>
-            </h1>
-            <p className="text-xl text-muted-foreground">
-              Inzichten over AI-automatisering, voice agents en moderne lead-opvolging
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Blog Posts */}
-      <section className="py-16 relative">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {blogPosts.map((post, index) => (
-                <Link key={index} to={`/blog/${post.slug}`} className="block">
-                  <motion.article
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="group h-full"
-                  >
-                    <div className="relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 h-full flex flex-col cursor-pointer">
-                      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                      <div className="relative flex-1">
-                        {/* Category */}
-                        <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4">
-                          {post.category}
-                        </div>
-
-                        {/* Title */}
-                        <h2 className="text-2xl font-bold mb-4 text-primary group-hover:text-primary/80 transition-colors">
-                          {post.title}
-                        </h2>
-
-                        {/* Excerpt */}
-                        <p className="text-muted-foreground leading-relaxed mb-6">
-                          {post.excerpt}
-                        </p>
-
-                        {/* Meta */}
-                        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
-                          <div className="flex items-center gap-2">
-                            <Calendar size={16} />
-                            <span>{post.date}</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <User size={16} />
-                            <span>{post.author}</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* CTA */}
-                      <div className="relative w-full">
-                        <Button
-                          variant="outline"
-                          className="w-full group-hover:border-primary group-hover:text-primary transition-colors"
-                          asChild
-                        >
-                          <div className="flex items-center justify-center">
-                            Lees meer
-                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                          </div>
-                        </Button>
-                      </div>
-                    </div>
-                  </motion.article>
-                </Link>
-              ))}
-            </div>
+    <PageShell title="Blog">
+      <section className="va-aa-hero">
+        <div className="va-aa-hero-grid" aria-hidden />
+        <div className="va-wrap" style={{ position: "relative" }}>
+          <div className="va-aa-breadcrumb">
+            <span className="va-hero-dot" />
+            <Link to="/">Voxa Auris</Link>
+            <span className="va-aa-sep">/</span>
+            <span className="va-aa-current">Blog</span>
           </div>
+          <h1 className="va-h1" style={{ maxWidth: "16ch", marginBottom: 36 }}>
+            Inzichten over <em className="va-italic-gold">leadopvolging</em>, AI en MKB-bouw.
+          </h1>
+          <p className="va-body" style={{ fontSize: 19, lineHeight: 1.55, maxWidth: 580 }}>
+            Wat we leren onder de motorkap — over voice agents, chatbots, RAG, en hoe we ze in de
+            praktijk inzetten voor Nederlandse bedrijven.
+          </p>
         </div>
       </section>
 
-      <Footer />
-    </div>
-  );
-};
+      <section className="va-section va-section-darker">
+        <div className="va-wrap">
+          <ul className="va-blog-list">
+            {posts.map((p, i) => (
+              <li key={p.slug} className="va-reveal" data-stagger={(i % 3) + 1}>
+                <Link to={`/blog/${p.slug}`} className="va-blog-card">
+                  <div className="va-blog-card-top">
+                    <span className="va-mono">{p.category}</span>
+                    <span className="va-mono va-blog-card-date">{p.date}</span>
+                  </div>
+                  <h2>{p.title}</h2>
+                  <p>{p.excerpt}</p>
+                  <span className="va-blog-card-arrow">
+                    Lees verder <span className="va-arr">→</span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
-export default Blog;
+      <style>{blogIndexStyles}</style>
+    </PageShell>
+  );
+}
+
+const blogIndexStyles = `
+  .va-blog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(244,221,141,0.30);
+  }
+  .va-blog-list li {
+    border-bottom: 1px solid rgba(244,221,141,0.30);
+  }
+  .va-blog-card {
+    display: block;
+    padding: 48px 0;
+    transition: background 220ms var(--ease);
+    position: relative;
+  }
+  .va-blog-card:hover { background: rgba(244,221,141,0.02); }
+  .va-blog-card-top {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 22px;
+    align-items: center;
+  }
+  .va-blog-card-top .va-mono { color: var(--gold-deep); }
+  .va-blog-card-date { color: var(--cream-mute) !important; }
+  .va-blog-card h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(28px, 3.4vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+    color: var(--cream);
+    margin: 0 0 18px;
+    max-width: 26ch;
+    transition: color 220ms var(--ease);
+  }
+  .va-blog-card:hover h2 { color: var(--gold); }
+  .va-blog-card p {
+    margin: 0;
+    color: var(--cream-mute);
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 64ch;
+  }
+  .va-blog-card-arrow {
+    margin-top: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+  }
+  .va-blog-card-arrow .va-arr { transition: transform 220ms var(--ease); }
+  .va-blog-card:hover .va-blog-card-arrow .va-arr { transform: translateX(3px); }
+
+  .va-hero-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 4px rgba(244,221,141,0.12);
+    display: inline-block;
+  }
+`;
