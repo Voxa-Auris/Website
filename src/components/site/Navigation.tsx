@@ -158,9 +158,13 @@ export default function Navigation() {
           background: transparent;
           border: 1px solid var(--ink-line);
           border-radius: 999px;
-          padding: 8px;
+          padding: 0;
           color: var(--cream);
           display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 44px;
+          min-height: 44px;
         }
         @media (min-width: 880px) {
           .va-nav-burger { display: none; }
@@ -171,14 +175,17 @@ export default function Navigation() {
           backdrop-filter: blur(14px);
           border-bottom: 1px solid var(--ink-line);
           padding: 24px 0 32px;
+          max-height: calc(100dvh - 72px);
+          overflow-y: auto;
         }
         .va-nav-mobile-link {
           display: block;
-          padding: 14px 0;
+          padding: 16px 0;
           font-size: 18px;
           color: var(--cream-mute);
           font-family: var(--body);
           border-bottom: 1px solid var(--ink-line);
+          min-height: 44px;
         }
         .va-nav-mobile-link.is-active { color: var(--gold); }
         .va-nav-mobile-cta {

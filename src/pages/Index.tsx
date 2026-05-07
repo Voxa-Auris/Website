@@ -446,11 +446,18 @@ const indexStyles = `
   .va-hero {
     position: relative;
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     padding-top: 120px;
     padding-bottom: 80px;
     overflow: hidden;
+  }
+  @media (max-width: 720px) {
+    .va-hero { padding-top: 96px; padding-bottom: 56px; min-height: auto; }
+    .va-hero-cap { margin-bottom: 24px; }
+    .va-hero-h1 { margin-bottom: 24px; }
+    .va-hero-cta { margin-top: 28px; }
   }
   .va-hero-grid {
     position: absolute;
@@ -661,6 +668,13 @@ const indexStyles = `
     padding-top: clamp(120px, 14vw, 180px);
     padding-bottom: clamp(120px, 14vw, 180px);
   }
+  @media (max-width: 720px) {
+    .va-demo-section { padding-top: 80px; padding-bottom: 80px; }
+    .va-demo-card { padding: 20px 18px 24px; }
+    .va-demo-top { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .va-demo-head { margin-bottom: 40px; }
+    .va-demo-footnote { margin-top: 40px; }
+  }
   .va-demo-section::before {
     content: "";
     position: absolute;
@@ -828,9 +842,12 @@ const indexStyles = `
   .va-step-right .va-step-num { order: 2; text-align: right; }
   .va-step-right .va-step-content { order: 1; }
   @media (max-width: 880px) {
-    .va-step, .va-step-right { grid-template-columns: 1fr; gap: 24px; }
+    .va-step, .va-step-right { grid-template-columns: 1fr; gap: 24px; padding: 56px 0; }
     .va-step-right .va-step-num { order: 0; text-align: left; }
     .va-step-right .va-step-content { order: 1; }
+  }
+  @media (max-width: 720px) {
+    .va-process-head { margin-bottom: 64px; }
   }
   .va-step-num {
     font-family: var(--display);
@@ -904,6 +921,7 @@ const indexStyles = `
   .va-final {
     text-align: center;
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -911,6 +929,9 @@ const indexStyles = `
     padding-top: clamp(80px, 12vw, 140px);
     padding-bottom: clamp(80px, 12vw, 140px);
     position: relative;
+  }
+  @media (max-width: 720px) {
+    .va-final { min-height: auto; padding-top: 80px; padding-bottom: 80px; }
   }
   .va-final h1 { max-width: 800px; margin-bottom: 28px; }
   .va-final .va-body {
