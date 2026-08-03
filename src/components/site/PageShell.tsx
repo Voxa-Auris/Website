@@ -16,7 +16,7 @@ export default function PageShell({ children, title }: PageShellProps) {
   useReveal();
 
   useEffect(() => {
-    if (title) document.title = `${title} — Voxa Auris`;
+    if (title) document.title = `${title}: Voxa Auris`;
   }, [title]);
 
   useEffect(() => {

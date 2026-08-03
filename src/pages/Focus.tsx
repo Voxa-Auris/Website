@@ -279,7 +279,7 @@ function FocusApp() {
           >
             <p className="text-3xl">✨</p>
             <p className="font-semibold">Voeg je taken toe hieronder</p>
-            <p className="text-muted-foreground text-sm">Max 3 taken per dag — focus is de sleutel</p>
+            <p className="text-muted-foreground text-sm">Max 3 taken per dag, focus is de sleutel</p>
           </motion.div>
         )}
 

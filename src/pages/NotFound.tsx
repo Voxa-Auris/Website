@@ -31,7 +31,7 @@ export default function NotFound() {
             <em className="va-italic-gold">naar de concurrent gegaan.</em>
           </h1>
           <p className="va-body" style={{ fontSize: 19 }}>
-            Geen paniek — wij reageren wél binnen 60 seconden.
+            Geen paniek. Wij reageren wél binnen 60 seconden.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap", justifyContent: "center" }}>
             <Magnetic>

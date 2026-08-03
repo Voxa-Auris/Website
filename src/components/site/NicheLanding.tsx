@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PageShell from "./PageShell";
 import Magnetic from "./Magnetic";
+import DemoBelkaart from "./DemoBelkaart";
 
 export interface NicheCopy {
   /** "Aanpak" / "Installatiebedrijven" / etc. — shown in breadcrumb. */
@@ -28,8 +29,6 @@ export interface NicheCopy {
     body: string;
     items: { title: string; body: string }[];
   };
-  /** GoHighLevel form embed URL. */
-  formUrl: string;
 }
 
 /**
@@ -169,18 +168,11 @@ export default function NicheLanding({ copy }: { copy: NicheCopy }) {
             </h2>
             <p style={{ textAlign: "left", maxWidth: "52ch", marginBottom: 32 }}>
               Vul je gegevens in en onze AI belt jou terug met een live demo. Geen
-              verkoopgesprek — gewoon het echte product aan de lijn.
+              verkoopgesprek, gewoon het echte product aan de lijn.
             </p>
             <div className="va-niche-form">
-              <iframe
-                src={copy.formUrl}
-                className="va-niche-iframe"
-                title="Demo aanvragen"
-              />
+              <DemoBelkaart />
             </div>
-            <p style={{ marginTop: 16, fontSize: 13, color: "var(--cream-mute)", textAlign: "center" }}>
-              Na invullen ontvang je automatisch een telefoontje van onze AI voice agent.
-            </p>
           </div>
         </div>
       </section>
@@ -271,14 +263,6 @@ const nicheStyles = `
     border-radius: 12px;
     padding: 8px;
   }
-  .va-niche-iframe {
-    width: 100%;
-    height: 640px;
-    border: 0;
-    background: transparent;
-    border-radius: 8px;
-  }
-
   .va-step {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);

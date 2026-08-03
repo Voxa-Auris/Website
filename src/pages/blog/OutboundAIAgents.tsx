@@ -9,7 +9,7 @@ export default function OutboundAIAgents() {
       lede="Iedere ondernemer kent het: een nieuwe lead vult een contactformulier in, en tegen de tijd dat je belt, heeft de concurrent al gereageerd. Daar maken de Outbound AI Agents van Voxa Auris het verschil."
     >
       <p>
-        Ze bellen jouw leads binnen 5 minuten nadat ze binnenkomen — het zogenaamde golden window
+        Ze bellen jouw leads binnen 5 minuten nadat ze binnenkomen, het zogenaamde golden window
         waarin de kans op succes maximaal is. Snelheid, efficiëntie en menselijke communicatie,
         volledig geautomatiseerd.
       </p>
@@ -24,10 +24,10 @@ export default function OutboundAIAgents() {
 
       <h3>De "golden 5-minuten window": waarom snelheid alles is</h3>
       <p>
-        Uit wereldwijd onderzoek blijkt dat leads <strong>21x meer kans</strong> hebben om klant
-        te worden als ze binnen 5 minuten worden gebeld. Na 10 minuten halveert de kans, en na 30
-        minuten daalt die met 90%. De reden? De lead is dan afgeleid, bezig met iets anders of al
-        in gesprek met een concurrent.
+        Uit onderzoek van InsideSales en MIT blijkt dat een lead die binnen 5 minuten wordt
+        gebeld <strong>21x meer kans</strong> heeft om gekwalificeerd te worden dan een lead die
+        pas na 30 minuten aan de beurt komt. De reden? De lead is dan afgeleid, bezig met iets
+        anders of al in gesprek met een concurrent.
       </p>
 
       <h3>De psychologie achter snelle opvolging</h3>
@@ -38,27 +38,30 @@ export default function OutboundAIAgents() {
 
       <BlogCTA
         title="Win de race om de lead"
-        body="Reageer binnen 5 minuten en verhoog je conversie met 21x."
+        body="Bel binnen 5 minuten in plaats van na 30 en je hebt 21x meer kans om de lead te kwalificeren."
       />
 
       <h2>De cijfers die alles zeggen over leadopvolging</h2>
 
-      <h3>78% kiest het bedrijf dat het eerst belt</h3>
+      <h3>42 uur voordat er iemand reageert</h3>
       <p>
-        Wanneer een klant meerdere offertes aanvraagt, kiest 78% voor degene die als eerste belt.
-        De eerste indruk telt, en Voxa Auris zorgt dat die van jou is.
+        Harvard Business Review onderzocht in 2011 hoe snel 2.241 bedrijven reageerden op een
+        online aanvraag. De gemiddelde reactietijd was 42 uur en 23% reageerde helemaal nooit. De
+        lat ligt dus laag.
       </p>
 
-      <h3>21x meer kans op afspraken bij snelle reactie</h3>
+      <h3>7% reageert binnen 5 minuten</h3>
       <p>
-        Bedrijven die leads binnen 5 minuten opvolgen, boeken 21x meer afspraken dan bedrijven die
-        wachten.
+        Drift keek in 2018 naar 433 bedrijven en het formulier op hun eigen site. Zeven procent
+        lukte het om binnen vijf minuten te antwoorden. De rest was te laat, of kwam nooit.
       </p>
 
-      <h3>90% minder kans op conversie na 30 minuten</h3>
+      <h3>100x meer kans om iemand aan de lijn te krijgen</h3>
       <p>
-        Wachten betekent verliezen. Binnen 30 minuten daalt de kans op een reactie met 90%, en na
-        een uur is de lead praktisch verdwenen.
+        Uit onderzoek van InsideSales en MIT (2007, ruim 15.000 leads) blijkt dat bellen binnen
+        vijf minuten 100x meer kans geeft op contact dan bellen na dertig minuten, en 21x meer
+        kans om de lead te kwalificeren. Het gaat daarbij om contact en kwalificatie, niet om
+        getekende omzet.
       </p>
 
       <h3>Na 48 uur is een warme lead weer koud</h3>
@@ -78,7 +81,7 @@ export default function OutboundAIAgents() {
 
       <h3>Integratie met je CRM en formulieren</h3>
       <p>
-        Of je nu werkt met HubSpot, Pipedrive, Salesforce of een simpel contactformulier — Voxa
+        Of je nu werkt met HubSpot, Pipedrive, Salesforce of een simpel contactformulier, Voxa
         Auris koppelt met vrijwel elk systeem.
       </p>
 
@@ -90,7 +93,7 @@ export default function OutboundAIAgents() {
 
       <BlogCTA
         title="Automatiseer je leadopvolging"
-        body="Laat geen enkele lead meer liggen — reageer altijd als eerste."
+        body="Laat geen enkele lead meer liggen, reageer altijd als eerste."
         cta="Plan een demo"
       />
 
@@ -98,7 +101,7 @@ export default function OutboundAIAgents() {
 
       <h3>1. Geen leads meer missen</h3>
       <p>
-        Elke lead krijgt direct aandacht — 24/7. Zelfs buiten kantooruren, zodat je nooit een kans
+        Elke lead krijgt direct aandacht, 24/7. Zelfs buiten kantooruren, zodat je nooit een kans
         laat liggen.
       </p>
 
@@ -129,7 +132,7 @@ export default function OutboundAIAgents() {
       </p>
 
       <h3>Voor marketingbureaus en leadgeneratie</h3>
-      <p>Volg inkomende leads direct op — nog voordat ze de concurrent bereiken.</p>
+      <p>Volg inkomende leads direct op, nog voordat ze de concurrent bereiken.</p>
 
       <h3>Voor coaches, consultants en dienstverleners</h3>
       <p>Nieuwe aanmeldingen? De AI plant meteen een intakegesprek of kennismakingscall.</p>
@@ -146,7 +149,7 @@ export default function OutboundAIAgents() {
       <p>Ja, via integraties met Google Calendar, Outlook of je CRM.</p>
 
       <h3>3. Klinkt de AI natuurlijk?</h3>
-      <p>Absoluut — de stem is vloeiend en past zich aan per gesprek.</p>
+      <p>Absoluut. De stem is vloeiend en past zich aan per gesprek.</p>
 
       <h3>4. Kan de AI me helpen prioriteiten te stellen in leads?</h3>
       <p>Ja, hij scoort leads op basis van activiteit en urgentie.</p>
@@ -163,7 +166,7 @@ export default function OutboundAIAgents() {
       <h2>Conclusie: succes begint binnen 5 minuten</h2>
       <p>
         In de wereld van sales telt elke minuut. De Outbound AI Agents van Voxa Auris zorgen
-        ervoor dat jij altijd als eerste reageert — professioneel, snel en met een menselijke
+        ervoor dat jij altijd als eerste reageert, professioneel, snel en met een menselijke
         touch. Zo verlies je nooit meer een warme lead, en maximaliseer je je kansen op groei.
       </p>
 

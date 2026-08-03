@@ -10,7 +10,7 @@ export default function InboundVoiceAgents() {
     >
       <p>
         Deze slimme AI-receptioniste neemt elk telefoontje op, herkent de klant, checkt agenda's,
-        plant afspraken in en beantwoordt vragen — allemaal binnen seconden. Of je nu een drukke
+        plant afspraken in en beantwoordt vragen, allemaal binnen seconden. Of je nu een drukke
         ondernemer bent met volle agenda's of een bedrijf runt waar bereikbaarheid cruciaal is:
         een Inbound Voice Agent zorgt ervoor dat je nooit meer een klant mist.
       </p>
@@ -20,7 +20,7 @@ export default function InboundVoiceAgents() {
         Een Inbound Voice Agent is een AI-gestuurde spraakassistent die binnenkomende
         telefoongesprekken volledig zelfstandig afhandelt. Bij Voxa Auris gaat dat verder dan
         standaard telefonische beantwoording. Onze voice agent begrijpt context, spreekt natuurlijk
-        Nederlands, en weet precies hoe jouw bedrijf werkt — omdat hij op maat is gemaakt.
+        Nederlands, en weet precies hoe jouw bedrijf werkt, omdat hij op maat is gemaakt.
       </p>
 
       <h3>Hoe werkt een AI-receptioniste in de praktijk</h3>
@@ -32,7 +32,7 @@ export default function InboundVoiceAgents() {
         <li>Notities doorgeven aan je team</li>
       </ul>
       <p>
-        Dankzij machine learning wordt de agent steeds slimmer — en dankzij het Voxa Auris
+        Dankzij machine learning wordt de agent steeds slimmer, en dankzij het Voxa Auris
         Dashboard zie je exact wat er gebeurt: hoeveel gesprekken, hoeveel afspraken en welke
         vragen het vaakst worden gesteld.
       </p>
@@ -59,9 +59,9 @@ export default function InboundVoiceAgents() {
 
       <h3>De realiteit: gemiste oproepen = gemiste omzet</h3>
       <p>
-        Onderzoek toont aan dat bedrijven gemiddeld 30% van hun potentiële klanten verliezen door
-        gemiste telefoontjes. Elke gemiste oproep is een gemiste kans. De Voxa Auris Voice Agent
-        zorgt ervoor dat geen enkel telefoontje meer onbeantwoord blijft.
+        Een klant die belt en niemand aan de lijn krijgt, belt zelden een tweede keer. Hij belt
+        de volgende in de lijst. Elke gemiste oproep is dus een gemiste kans. De Voxa Auris Voice
+        Agent zorgt ervoor dat geen enkel telefoontje meer onbeantwoord blijft.
       </p>
 
       <h3>Altijd bereikbaar, zonder extra personeel</h3>
@@ -75,7 +75,7 @@ export default function InboundVoiceAgents() {
       <p>
         Een uniek voordeel van Voxa Auris is het dashboard: een helder overzicht van alle
         gesprekken, afspraken en klantvragen. Je ziet trends, kunt beleid aanpassen, en ontdekt
-        waar je klanten het meest om vragen — zodat je bedrijf slimmer kan groeien.
+        waar je klanten het meest om vragen, zodat je bedrijf slimmer kan groeien.
       </p>
 
       <h2>De voordelen van de Voxa Auris Inbound Voice Agent</h2>
@@ -95,7 +95,7 @@ export default function InboundVoiceAgents() {
       <h3>3. Efficiënt agendabeheer en afspraakplanning</h3>
       <p>
         De agent koppelt direct met je digitale agenda. Hij kan afspraken plannen, verzetten of
-        annuleren — volledig binnen jouw bedrijfsregels.
+        annuleren, volledig binnen jouw bedrijfsregels.
       </p>
 
       <h3>4. Klantvragen direct beantwoord</h3>
@@ -106,7 +106,7 @@ export default function InboundVoiceAgents() {
 
       <h3>5. Integratie met bestaande systemen</h3>
       <p>
-        Of je nu werkt met Google Calendar, HubSpot of een ander CRM — de AI koppelt naadloos. Zo
+        Of je nu werkt met Google Calendar, HubSpot of een ander CRM, de AI koppelt naadloos. Zo
         blijft je workflow intact en wordt de AI echt onderdeel van je team.
       </p>
 
@@ -120,7 +120,7 @@ export default function InboundVoiceAgents() {
 
       <h3>Voor dienstverleners</h3>
       <p>
-        Van kappers tot consultants — klanten kunnen direct een afspraak plannen zonder te wachten.
+        Van kappers tot consultants, klanten kunnen direct een afspraak plannen zonder te wachten.
       </p>
 
       <h3>Voor e-commerce bedrijven</h3>
@@ -140,7 +140,7 @@ export default function InboundVoiceAgents() {
       <h2>FAQ: Veelgestelde vragen over Inbound Voice Agents</h2>
 
       <h3>1. Werkt de AI alleen tijdens kantooruren?</h3>
-      <p>Nee, de AI werkt 24/7 — dag en nacht bereikbaar.</p>
+      <p>Nee, de AI werkt 24/7, dag en nacht bereikbaar.</p>
 
       <h3>2. Hoe natuurlijk klinkt de stem?</h3>
       <p>Onze voice agents klinken bijna menselijk, met intonatie en empathie.</p>
@@ -156,15 +156,15 @@ export default function InboundVoiceAgents() {
 
       <h3>6. Wat kost een Inbound Voice Agent?</h3>
       <p>
-        De prijs is afhankelijk van jouw gebruik en functies — maar altijd voordeliger dan een
+        De prijs is afhankelijk van jouw gebruik en functies, maar altijd voordeliger dan een
         menselijke kracht.
       </p>
 
       <h2>Conclusie: Slimmer omgaan met klantcontact dankzij Voxa Auris</h2>
       <p>
-        De Inbound Voice Agent van Voxa Auris is meer dan technologie — het is een slimme collega
+        De Inbound Voice Agent van Voxa Auris is meer dan technologie, het is een slimme collega
         die jouw bedrijf laat groeien. Nooit meer een gemiste oproep, altijd bereikbaar, en altijd
-        professioneel. Of je nu solo-ondernemer bent of een groeiend team hebt — met Voxa Auris
+        professioneel. Of je nu solo-ondernemer bent of een groeiend team hebt, met Voxa Auris
         kies je voor efficiëntie, bereikbaarheid en klanttevredenheid.
       </p>
 

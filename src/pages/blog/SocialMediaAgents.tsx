@@ -6,7 +6,7 @@ export default function SocialMediaAgents() {
       category="Marketing"
       date="2 december 2025"
       title="Social Media Agents: De AI marketingassistent die 24/7 post, plant en reageert"
-      lede="Iedere ondernemer weet het: consistent posten op social media is belangrijk — maar in de praktijk schiet het er vaak bij in. Je bent druk met klanten, projecten of sales, en ineens is je Instagram een maand stil. Dat probleem lossen de Social Media Agents van Voxa Auris op."
+      lede="Iedere ondernemer weet het: consistent posten op social media is belangrijk, maar in de praktijk schiet het er vaak bij in. Je bent druk met klanten, projecten of sales, en ineens is je Instagram een maand stil. Dat probleem lossen de Social Media Agents van Voxa Auris op."
     >
       <p>
         Deze AI-assistenten zorgen ervoor dat je merk altijd actief en zichtbaar blijft, zonder
@@ -18,11 +18,11 @@ export default function SocialMediaAgents() {
       <h2>Wat is een Social Media Agent van Voxa Auris?</h2>
       <p>
         Een Social Media Agent is een AI-marketingassistent die taken uitvoert op jouw social
-        mediakanalen — van contentcreatie tot interactie. Hij werkt volledig op maat, volgens
+        mediakanalen, van contentcreatie tot interactie. Hij werkt volledig op maat, volgens
         jouw merkstem en strategie, en communiceert alsof het een echte medewerker is.
       </p>
       <p>
-        Of je nu actief bent op Instagram, LinkedIn, TikTok, X (Twitter) of Facebook — de agent
+        Of je nu actief bent op Instagram, LinkedIn, TikTok, X (Twitter) of Facebook: de agent
         begrijpt de dynamiek van elk platform.
       </p>
 
@@ -41,7 +41,7 @@ export default function SocialMediaAgents() {
       <h3>De combinatie van creativiteit en data-analyse</h3>
       <p>
         De AI-agent gebruikt data om te bepalen wanneer, wat en hoe je moet posten. Maar de
-        teksten en visuals worden gecreëerd in jouw tone of voice — herkenbaar, menselijk en
+        teksten en visuals worden gecreëerd in jouw tone of voice, herkenbaar, menselijk en
         merkconsistent.
       </p>
 
@@ -81,7 +81,7 @@ export default function SocialMediaAgents() {
       <h2>De voordelen voor ondernemers</h2>
 
       <h3>1. Consistentie zonder stress</h3>
-      <p>De AI houdt jouw accounts actief — elke week, zonder uitstel of inspiratiegebrek.</p>
+      <p>De AI houdt jouw accounts actief, elke week, zonder uitstel of inspiratiegebrek.</p>
 
       <h3>2. Meer interactie met minder tijd</h3>
       <p>Dankzij realtime reacties en gepersonaliseerde antwoorden blijven volgers betrokken.</p>
@@ -93,7 +93,7 @@ export default function SocialMediaAgents() {
       <p>Geen handmatig inplannen meer. Geen spreadsheets. Alles wordt automatisch gerapporteerd.</p>
 
       <h3>5. Maatwerk per platform en merkstijl</h3>
-      <p>LinkedIn krijgt een andere toon dan Instagram — de AI herkent dat verschil.</p>
+      <p>LinkedIn krijgt een andere toon dan Instagram, de AI herkent dat verschil.</p>
 
       <BlogCTA
         title="Schaal je social media zonder extra medewerkers"
@@ -116,7 +116,7 @@ export default function SocialMediaAgents() {
 
       <h3>Tone of voice-behoud</h3>
       <p>
-        Elk merk heeft zijn eigen stijl — en dat behouden we. Of je nu zakelijk bent of speels, de
+        Elk merk heeft zijn eigen stijl, en dat behouden we. Of je nu zakelijk bent of speels, de
         AI past zich aan op je tone of voice.
       </p>
 
@@ -132,7 +132,7 @@ export default function SocialMediaAgents() {
       <p>Lokale zichtbaarheid verhogen zonder extra personeelskosten.</p>
 
       <h3>E-commerce en retail</h3>
-      <p>Productlanceringen, reviews, seizoensacties — allemaal automatisch gepost.</p>
+      <p>Productlanceringen, reviews, seizoensacties: allemaal automatisch gepost.</p>
 
       <h3>Events, hospitality en personal brands</h3>
       <p>Altijd promotie, nooit te laat, altijd in lijn met je agenda.</p>
@@ -146,7 +146,7 @@ export default function SocialMediaAgents() {
       <p>Ja, de AI kan posts genereren en publiceren via veilige API-integraties.</p>
 
       <h3>2. Klinken de teksten niet te "AI-achtig"?</h3>
-      <p>Nee — we trainen op jouw tone of voice. Menselijk, herkenbaar en creatief.</p>
+      <p>Nee, we trainen op jouw tone of voice. Menselijk, herkenbaar en creatief.</p>
 
       <h3>3. Kan ik goedkeuring geven voor publicatie?</h3>
       <p>Zeker. Je bepaalt zelf of posts automatisch of handmatig live gaan.</p>
@@ -163,7 +163,7 @@ export default function SocialMediaAgents() {
       <h2>Conclusie: social media op autopilot met een menselijke touch</h2>
       <p>
         De Social Media Agents van Voxa Auris nemen het drukke, repetitieve werk over en houden
-        jouw merk 24/7 actief. Ze posten, plannen, reageren en analyseren — volledig afgestemd op
+        jouw merk 24/7 actief. Ze posten, plannen, reageren en analyseren, volledig afgestemd op
         jouw merkstem. Zo houd jij tijd over voor groei, strategie en echte interactie.
       </p>
 

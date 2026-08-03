@@ -1,9 +1,11 @@
-import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import PageShell from "@/components/site/PageShell";
 import Magnetic from "@/components/site/Magnetic";
 
 export default function Index() {
+  const navigate = useNavigate();
+  const [tel, setTel] = useState("");
   const heroH1Ref = useRef<HTMLHeadingElement | null>(null);
   const heroRef = useRef<HTMLElement | null>(null);
   const glowRef = useRef<HTMLDivElement | null>(null);
@@ -149,7 +151,7 @@ export default function Index() {
             </h1>
             <p className="va-body va-hero-body">
               De eerste 5 minuten na een lead bepalen of jij de opdracht krijgt of de buurman.
-              Onze AI belt automatisch terug binnen 60 seconden — ook om 23:00.
+              Onze AI belt automatisch terug binnen 60 seconden, ook om 23:00.
             </p>
             <div className="va-hero-cta">
               <Magnetic>
@@ -170,8 +172,8 @@ export default function Index() {
                 60<sup>s</sup>
               </div>
               <small>
-                Gemiddelde reactietijd —<br />
-                dag, nacht, weekend.
+                Gemiddelde reactietijd.<br />
+                Dag, nacht, weekend.
               </small>
             </div>
             <div className="va-ornament-line" />
@@ -195,11 +197,14 @@ export default function Index() {
             </h2>
           </div>
           <div className="va-stats">
-            <Stat label="5 minuten" figure="100" sup="×" body="Het venster waarin een lead méér kans heeft om te converteren." />
-            <Stat label="First responder" figure="78" sup="%" body="Van klanten kiest het bedrijf dat als eerste reageert." stagger={2} />
-            <Stat label="30 minuten" figure="80" sup="%" body="Na 30 minuten is het overgrote deel van je leads al weg." stagger={3} />
+            <Stat label="5 minuten" figure="100" sup="×" body="Meer kans om iemand aan de lijn te krijgen als je binnen 5 minuten belt in plaats van na 30." />
+            <Stat label="Reactietijd" figure="42u" body="Zo lang doet een gemiddeld bedrijf erover om op een aanvraag te reageren." stagger={2} />
+            <Stat label="Snel genoeg" figure="7" sup="%" body="Zo klein is het deel van de bedrijven dat wél binnen 5 minuten reageert." stagger={3} />
             <Stat label="Beschikbaarheid" figure="24/7" body="AI reageert altijd. Ook 's nachts. Ook in het weekend." stagger={4} />
           </div>
+          <p className="va-mono va-stats-source va-reveal" data-stagger={4}>
+            Bronnen: InsideSales/MIT 2007 (contactkans), Harvard Business Review 2011, Drift 2018
+          </p>
         </div>
       </section>
 
@@ -207,20 +212,20 @@ export default function Index() {
       <section className="va-demo-section" id="demo">
         <div className="va-wrap">
           <div className="va-demo-head va-reveal">
-            <span className="va-mono">Het bewijs</span>
+            <span className="va-mono">Hoor het zelf</span>
             <h2 className="va-h2" style={{ maxWidth: 760, margin: "0 auto" }}>
-              Geen mockup. Geen scripted clip. <br />
-              <em className="va-italic-gold">Een echt gesprek</em> dat vorige week is gevoerd.
+              Lees niet wat wij ervan vinden. <br />
+              <em className="va-italic-gold">Laat de AI je bellen.</em>
             </h2>
           </div>
 
           <div className="va-demo-card va-reveal">
             <div className="va-demo-top">
               <span className="va-live-tag">
-                <span className="va-live-dot" /> Live gesprek
+                <span className="va-live-dot" /> Voorbeeldgesprek
               </span>
               <span className="va-call-meta">
-                00:42<span className="va-sep">·</span>Olivia × Lead #1247
+                Olivia<span className="va-sep">·</span>inkomende oproep
               </span>
             </div>
             <div ref={waveformRef} className="va-waveform" aria-hidden />
@@ -229,20 +234,23 @@ export default function Index() {
               om 14:00 of donderdag om 10:00 beschikbaar. Wat past het beste?"
             </p>
             <div className="va-play-row">
-              <button className="va-play-btn" type="button" aria-label="Speel gesprek af">
+              <Link to="/gratis-demo" className="va-play-btn">
                 <span className="va-play-circle" aria-hidden>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M5 3.5v13l11-6.5L5 3.5z" fill="currentColor" />
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1l-2.22 2.2z"
+                      fill="currentColor"
+                    />
                   </svg>
                 </span>
-                <span className="va-play-label">Speel gesprek af</span>
-              </button>
-              <span className="va-play-caption">Echt gesprek · gepubliceerd met toestemming</span>
+                <span className="va-play-label">Laat Olivia mij bellen</span>
+              </Link>
+              <span className="va-play-caption">Binnen een minuut hoor je wat jouw klanten horen</span>
             </div>
           </div>
 
           <p className="va-demo-footnote va-reveal">
-            Dit is geen toekomstmuziek. Dit is wat er nu, vandaag, voor onze klanten gebeurt.
+            Zo klinkt het als iemand jouw bedrijf belt op een moment dat jij niet kunt opnemen.
           </p>
         </div>
       </section>
@@ -272,7 +280,7 @@ export default function Index() {
             num="03"
             cap="Automatisch ingepland"
             title="Afspraak staat in je agenda"
-            body="De AI plant een afspraak in jouw agenda. Jij krijgt een gekwalificeerde lead die klaar is voor het gesprek — geen koud bellen meer."
+            body="De AI plant een afspraak in jouw agenda. Jij krijgt een gekwalificeerde lead die klaar is voor het gesprek, dus geen koud bellen meer."
           />
         </div>
       </section>
@@ -308,25 +316,26 @@ export default function Index() {
       <section className="va-section va-section-darker" id="investering">
         <div className="va-wrap">
           <div className="va-pricing">
-            <span className="va-mono va-reveal">Investering</span>
+            <span className="va-mono va-reveal">Wat het oplevert</span>
             <div>
               <h2 className="va-h2 va-reveal">
-                Begin met een AI Scan van{" "}
+                Elke aanvraag{" "}
                 <span className="va-gold" style={{ fontStyle: "italic" }}>
-                  €1.500
-                </span>
-                .<br />
-                Daarna een vaste maandprijs.<br />
+                  binnen een minuut
+                </span>{" "}
+                opgevolgd.<br />
+                Een vaste maandprijs.<br />
                 Zonder verrassingen.
               </h2>
               <p className="va-body va-reveal" data-stagger={2} style={{ marginTop: 36 }}>
-                We beginnen altijd met een AI Scan: een diepgaande analyse waar je AI in jouw
-                bedrijf het meeste oplevert. Pas daarna beslissen we samen of we doorgaan.
+                We kijken eerst waar in jouw proces de aanvragen blijven liggen. Daarna bouwen we
+                precies het stuk dat dat oplost, afgestemd op jouw gesprekken en jouw klanten. Wat
+                het kost hoor je in het gesprek, voordat er iets gebouwd wordt.
               </p>
               <div className="va-reveal" data-stagger={3} style={{ marginTop: 32 }}>
                 <Magnetic>
-                  <Link to="/aanpak" className="va-btn va-btn-primary">
-                    Boek je AI Scan <span className="va-arr">→</span>
+                  <Link to="/gratis-demo" className="va-btn va-btn-primary">
+                    Start de gratis demo <span className="va-arr">→</span>
                   </Link>
                 </Magnetic>
               </div>
@@ -344,14 +353,15 @@ export default function Index() {
           </h1>
           <p className="va-body va-reveal" data-stagger={2}>
             Vul je gegevens in. Alexander belt je binnen 60 seconden met een korte demo.
-            Geen gesprek met een verkoper — gewoon de AI in actie.
+            Geen gesprek met een verkoper, gewoon de AI in actie.
           </p>
           <form
             className="va-phone-form va-reveal"
             data-stagger={3}
             onSubmit={(e) => {
               e.preventDefault();
-              window.location.href = "/gratis-demo";
+              const digits = tel.replace(/\D/g, "");
+              navigate(digits ? `/gratis-demo?tel=${digits}` : "/gratis-demo");
             }}
           >
             <span className="va-pre">+31</span>
@@ -360,6 +370,8 @@ export default function Index() {
               placeholder="6 12 34 56 78"
               autoComplete="tel-national"
               aria-label="Telefoonnummer"
+              value={tel}
+              onChange={(e) => setTel(e.target.value)}
             />
             <Magnetic>
               <button type="submit" className="va-btn va-btn-primary">
@@ -638,6 +650,12 @@ const indexStyles = `
   }
   @media (max-width: 880px) { .va-stats { grid-template-columns: 1fr 1fr; gap: 40px; } }
   @media (max-width: 520px) { .va-stats { grid-template-columns: 1fr; } }
+  .va-stats-source {
+    max-width: 1100px;
+    margin: 48px auto 0;
+    color: var(--cream-mute);
+    opacity: 0.55;
+  }
   .va-stat-label { margin-bottom: 18px; }
   .va-stat-figure {
     font-family: var(--display);

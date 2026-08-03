@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PageShell from "@/components/site/PageShell";
 import Magnetic from "@/components/site/Magnetic";
+import DemoBelkaart from "@/components/site/DemoBelkaart";
 
 export default function Contact() {
   return (
@@ -18,7 +19,7 @@ export default function Contact() {
             Praat met <em className="va-italic-gold">ons.</em>
           </h1>
           <p className="va-body" style={{ fontSize: 19, lineHeight: 1.55, maxWidth: 580 }}>
-            Vul je gegevens in en we nemen binnen 1 werkdag contact op. Of bel direct — geen
+            Vul je gegevens in en we nemen binnen 1 werkdag contact op. Of bel direct. Geen
             wachttijden, geen voicemail.
           </p>
         </div>
@@ -35,7 +36,7 @@ export default function Contact() {
               <li>
                 <span className="va-mono">Bel Olivia</span>
                 <a href="tel:+31762057076">+31 76 205 7076</a>
-                <small>Onze AI-receptionist — neemt 24/7 op</small>
+                <small>Onze AI-receptionist, neemt 24/7 op</small>
               </li>
               <li>
                 <span className="va-mono">Mobiel + WhatsApp</span>
@@ -69,20 +70,16 @@ export default function Contact() {
 
           {/* Form */}
           <div className="va-reveal" data-stagger={2}>
-            <span className="va-mono">Of stuur een bericht</span>
+            <span className="va-mono">Of laat ons bellen</span>
             <h3 className="va-contact-form-title">
-              <em className="va-italic-gold">Vertel</em> ons in een paar regels wat je zoekt.
+              <em className="va-italic-gold">Hoor</em> meteen waar we het over hebben.
             </h3>
             <div className="va-contact-form-shell">
-              <iframe
-                className="va-contact-iframe"
-                src="https://api.leadconnectorhq.com/widget/form/1NrTnNfSyP5VafVmAY7h"
-                title="Contact formulier"
-              />
+              <DemoBelkaart />
             </div>
             <p className="va-contact-formfoot">
-              Of laat Alexander je bellen — vul je nummer op de demo-pagina in en we nemen binnen
-              1 minuut contact op.
+              Olivia belt je binnen een minuut terug met een demo op jouw bedrijf. Geen
+              verkooppraatje, gewoon het product aan de lijn.
             </p>
           </div>
         </div>
@@ -154,13 +151,6 @@ const contactStyles = `
     border-radius: 16px;
     padding: 12px;
     box-shadow: 0 30px 80px -40px rgba(0,0,0,0.8);
-  }
-  .va-contact-iframe {
-    width: 100%;
-    height: 640px;
-    border: 0;
-    background: transparent;
-    border-radius: 8px;
   }
   .va-contact-formfoot {
     margin-top: 16px;

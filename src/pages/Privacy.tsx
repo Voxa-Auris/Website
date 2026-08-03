@@ -94,20 +94,20 @@ export default function Privacy() {
               <p>Onder de AVG heb je de volgende rechten:</p>
               <ul>
                 <li>
-                  <strong>Inzage</strong> — je mag opvragen welke gegevens wij van je hebben
+                  <strong>Inzage</strong>: je mag opvragen welke gegevens wij van je hebben
                 </li>
                 <li>
-                  <strong>Correctie</strong> — onjuiste gegevens laten corrigeren
+                  <strong>Correctie</strong>: onjuiste gegevens laten corrigeren
                 </li>
                 <li>
-                  <strong>Verwijdering</strong> — je gegevens uit onze systemen laten halen
+                  <strong>Verwijdering</strong>: je gegevens uit onze systemen laten halen
                 </li>
                 <li>
-                  <strong>Bezwaar tegen direct marketing</strong> — wij stoppen onmiddellijk bij elk
+                  <strong>Bezwaar tegen direct marketing</strong>: wij stoppen onmiddellijk bij elk
                   bezwaar
                 </li>
                 <li>
-                  <strong>Klacht indienen</strong> — bij de Autoriteit Persoonsgegevens
+                  <strong>Klacht indienen</strong>: bij de Autoriteit Persoonsgegevens
                   (autoriteitpersoonsgegevens.nl)
                 </li>
               </ul>

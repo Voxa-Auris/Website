@@ -3,7 +3,7 @@ import PageShell from "@/components/site/PageShell";
 
 const posts = [
   {
-    title: "Inbound Voice Agents — De slimme AI-receptioniste die nooit een klant mist",
+    title: "Inbound Voice Agents: De slimme AI-receptioniste die nooit een klant mist",
     excerpt:
       "In een wereld waar klanten direct antwoord verwachten, kan één gemiste oproep het verschil betekenen tussen een nieuwe klant en een verloren kans.",
     date: "2 december 2025",
@@ -12,7 +12,7 @@ const posts = [
   },
   {
     title:
-      "Outbound AI Agents — Nooit meer een lead missen binnen de golden 5-minuten window",
+      "Outbound AI Agents: Nooit meer een lead missen binnen de golden 5-minuten window",
     excerpt:
       "Een nieuwe lead vult een contactformulier in. Tegen de tijd dat je belt, heeft de concurrent al gereageerd. Daar maakt de Outbound AI het verschil.",
     date: "2 december 2025",
@@ -20,7 +20,7 @@ const posts = [
     slug: "outbound-ai-agents",
   },
   {
-    title: "AI Chatbots voor bedrijven — 17 krachtige use cases en implementatietips",
+    title: "AI Chatbots voor bedrijven: 17 krachtige use cases en implementatietips",
     excerpt:
       "Voor ondernemers die sneller willen groeien en tegelijk support-kosten willen verlagen, zijn AI chatbots een slimme, schaalbare oplossing.",
     date: "2 december 2025",
@@ -28,26 +28,26 @@ const posts = [
     slug: "ai-chatbots",
   },
   {
-    title: "RAG Agents — De slimste AI die altijd juiste antwoorden geeft",
+    title: "RAG Agents: De slimste AI die altijd juiste antwoorden geeft",
     excerpt:
-      "AI kan geweldig zijn — tot het onzin gaat verzinnen. RAG Agents combineren taalintelligentie met jouw eigen bedrijfsdata.",
+      "AI kan geweldig zijn, tot het onzin gaat verzinnen. RAG Agents combineren taalintelligentie met jouw eigen bedrijfsdata.",
     date: "2 december 2025",
     category: "Technologie",
     slug: "rag-agents",
   },
   {
     title:
-      "Social Media Agents — De AI marketingassistent die 24/7 post, plant en reageert",
+      "Social Media Agents: De AI marketingassistent die 24/7 post, plant en reageert",
     excerpt:
-      "Consistent posten op social media is belangrijk — maar in de praktijk schiet het er vaak bij in. Social Media Agents nemen het over.",
+      "Consistent posten op social media is belangrijk, maar in de praktijk schiet het er vaak bij in. Social Media Agents nemen het over.",
     date: "2 december 2025",
     category: "Marketing",
     slug: "social-media-agents",
   },
   {
-    title: "Lead Scrape Agents — De slimme AI die nieuwe leads zoekt, verrijkt en doorstuurt",
+    title: "Lead Scrape Agents: De slimme AI die nieuwe leads zoekt, verrijkt en doorstuurt",
     excerpt:
-      "Iedere ondernemer wil meer leads — maar niemand heeft tijd om ze handmatig te zoeken. Lead Scrape Agents vinden en verrijken automatisch.",
+      "Iedere ondernemer wil meer leads, maar niemand heeft tijd om ze handmatig te zoeken. Lead Scrape Agents vinden en verrijken automatisch.",
     date: "2 december 2025",
     category: "Lead generatie",
     slug: "lead-scrape-agents",
@@ -70,7 +70,7 @@ export default function Blog() {
             Inzichten over <em className="va-italic-gold">leadopvolging</em>, AI en MKB-bouw.
           </h1>
           <p className="va-body" style={{ fontSize: 19, lineHeight: 1.55, maxWidth: 580 }}>
-            Wat we leren onder de motorkap — over voice agents, chatbots, RAG, en hoe we ze in de
+            Wat we leren onder de motorkap, over voice agents, chatbots, RAG, en hoe we ze in de
             praktijk inzetten voor Nederlandse bedrijven.
           </p>
         </div>

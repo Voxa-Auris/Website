@@ -7,7 +7,7 @@ const copy: NicheCopy = {
     line1: "Terwijl jij je offerte uitrekent,",
     accent: "heeft de concurrent al gebeld.",
     lede:
-      "Klanten vragen 3-5 offertes aan. Wie als eerste belt, wint de opdracht. Jouw AI voice agent neemt binnen seconden contact op — automatisch, 24/7.",
+      "Klanten vragen 3-5 offertes aan. Wie als eerste belt, wint de opdracht. Jouw AI voice agent neemt binnen seconden contact op, automatisch, 24/7.",
   },
   pain: {
     title: "Herken jij dit?",
@@ -27,12 +27,12 @@ const copy: NicheCopy = {
       {
         title: "Handmatige opvolging kost uren",
         body:
-          "Terugbellen, kwalificeren, inplannen: uren per week die je niet hebt — en leads die je verliest.",
+          "Terugbellen, kwalificeren, inplannen: uren per week die je niet hebt, en leads die je verliest.",
       },
     ],
   },
   flow: {
-    title: "Van aanvraag tot warme afspraak — automatisch.",
+    title: "Van aanvraag tot warme afspraak, automatisch.",
     body: "Drie stappen. Geen handwerk. Geen training. Live binnen 2 weken.",
     steps: [
       {
@@ -65,7 +65,7 @@ const copy: NicheCopy = {
       {
         title: "Stelt de juiste vragen",
         body:
-          "Type product, afmeting, urgentie, budget — alles wat jij nodig hebt voor een goede offerte.",
+          "Type product, afmeting, urgentie, budget, alles wat jij nodig hebt voor een goede offerte.",
       },
       {
         title: "Plant afspraken automatisch in",
@@ -87,7 +87,6 @@ const copy: NicheCopy = {
       },
     ],
   },
-  formUrl: "https://api.leadconnectorhq.com/widget/form/1NrTnNfSyP5VafVmAY7h",
 };
 
 export default function Woningverbetering() {

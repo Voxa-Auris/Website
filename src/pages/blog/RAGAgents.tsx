@@ -6,11 +6,11 @@ export default function RAGAgents() {
       category="Technologie"
       date="2 december 2025"
       title="RAG Agents: De slimste AI die altijd juiste antwoorden geeft met jouw bedrijfsdata"
-      lede="AI kan geweldig zijn — tot het onzin gaat verzinnen. Iedere ondernemer die generatieve AI gebruikt weet: ze klinken slim, maar geven soms gewoon foute informatie. Dat is precies waarom RAG Agents bestaan."
+      lede="AI kan geweldig zijn, tot het onzin gaat verzinnen. Iedere ondernemer die generatieve AI gebruikt weet: ze klinken slim, maar geven soms gewoon foute informatie. Dat is precies waarom RAG Agents bestaan."
     >
       <p>
         Een RAG Agent van Voxa Auris combineert taalintelligentie met jouw eigen bedrijfsdata. Zo
-        krijg je AI die actuele, correcte en merkveilige antwoorden geeft — zonder dat je alles
+        krijg je AI die actuele, correcte en merkveilige antwoorden geeft, zonder dat je alles
         opnieuw hoeft te trainen.
       </p>
 
@@ -65,7 +65,7 @@ export default function RAGAgents() {
 
       <h3>Stap 3: Antwoord genereren met merktaal en context</h3>
       <p>
-        Het taalmodel gebruikt die fragmenten om een compleet, natuurlijk antwoord te formuleren —
+        Het taalmodel gebruikt die fragmenten om een compleet, natuurlijk antwoord te formuleren, 
         precies zoals jij dat zou zeggen.
       </p>
 
@@ -76,7 +76,7 @@ export default function RAGAgents() {
 
       <h3>Kennisdeling binnen teams</h3>
       <p>
-        Nooit meer eindeloos zoeken in gedeelde mappen of Slack-kanalen — de RAG Agent vindt het
+        Nooit meer eindeloos zoeken in gedeelde mappen of Slack-kanalen, de RAG Agent vindt het
         direct.
       </p>
 
@@ -103,7 +103,7 @@ export default function RAGAgents() {
       <h2>De voordelen van een RAG Agent van Voxa Auris</h2>
 
       <h3>1. 100% merkveilige antwoorden</h3>
-      <p>De AI gebruikt alleen data die jij goedkeurt — geen publieke info, geen risico's.</p>
+      <p>De AI gebruikt alleen data die jij goedkeurt, geen publieke info, geen risico's.</p>
 
       <h3>2. Actuele kennis zonder hertraining</h3>
       <p>Nieuwe documenten worden automatisch geïndexeerd, dus de AI is altijd up-to-date.</p>
@@ -112,7 +112,7 @@ export default function RAGAgents() {
       <p>Gemiddeld bespaart een RAG Agent bedrijven tot 40% aan tijd bij interne support.</p>
 
       <h3>4. Volledig integreerbaar in bestaande workflows</h3>
-      <p>Gebruik hem binnen Slack, Teams, intranet of CRM — waar jij werkt.</p>
+      <p>Gebruik hem binnen Slack, Teams, intranet of CRM, waar jij werkt.</p>
 
       <h3>5. AVG-conform en veilig</h3>
       <p>Data blijft onder jouw controle, versleuteld en traceerbaar.</p>
@@ -143,7 +143,7 @@ export default function RAGAgents() {
       </p>
 
       <h3>2. Kan een RAG Agent draaien op mijn bestaande documenten?</h3>
-      <p>Ja, PDF's, Word, Notion, Google Docs, CRM-data — alles kan worden geïndexeerd.</p>
+      <p>Ja, PDF's, Word, Notion, Google Docs, CRM-data: alles kan worden geïndexeerd.</p>
 
       <h3>3. Moet ik de AI zelf trainen?</h3>
       <p>Nee, Voxa Auris doet dit volledig voor je tijdens onboarding.</p>
@@ -155,12 +155,12 @@ export default function RAGAgents() {
       <p>Ja. Nieuwe documenten worden automatisch toegevoegd aan de index.</p>
 
       <h3>6. Kan ik dit combineren met mijn chatbot of voice agent?</h3>
-      <p>Zeker — onze RAG Agents voeden ook jouw chat- en voice AI met actuele kennis.</p>
+      <p>Zeker. Onze RAG Agents voeden ook jouw chat- en voice AI met actuele kennis.</p>
 
       <h2>Conclusie: AI die jouw kennis echt begrijpt</h2>
       <p>
         Met een RAG Agent van Voxa Auris heb je geen generieke chatbot, maar een AI die jouw
-        bedrijf kent — tot in de details. Geen hallucinaties, geen verkeerde informatie, maar
+        bedrijf kent, tot in de details. Geen hallucinaties, geen verkeerde informatie, maar
         heldere, betrouwbare antwoorden op basis van jouw kennis. Zo werk je sneller, slimmer en
         met volledige controle over je data.
       </p>

@@ -22,14 +22,14 @@ export default function Aanpak() {
           </h1>
           <p className="va-aa-hero-lede">
             We verkopen geen losse tools meer. We bouwen één samenhangend systeem dat elke
-            lead opvangt vanaf het moment dat ze binnenkomt tot ze klant worden — of vriendelijk
+            lead opvangt vanaf het moment dat ze binnenkomt tot ze klant worden, of vriendelijk
             afgesloten zijn.
           </p>
 
           <div className="va-aa-hero-meta">
             <div>
               <span className="va-mono">Vier kanalen</span>
-              <p>Voice, chat, WhatsApp, SMS — gekozen op wat past, niet wat we hebben.</p>
+              <p>Voice, chat, WhatsApp, SMS: gekozen op wat past, niet wat we hebben.</p>
             </div>
             <div>
               <span className="va-mono">Eén traject</span>
@@ -37,7 +37,7 @@ export default function Aanpak() {
             </div>
             <div>
               <span className="va-mono">Begint met luisteren</span>
-              <p>Een AI Scan van €1.500 bepaalt wat past bij jouw bedrijf en branche.</p>
+              <p>We kijken eerst waar het weglekt, daarna bepalen we wat past bij jouw branche.</p>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Aanpak() {
             </p>
             <p className="va-reveal" data-stagger={3}>
               Wij bouwen één systeem. Voice, chat, WhatsApp en SMS zijn de kanalen waarmee dat
-              systeem praat — afhankelijk van waar de klant op dat moment is en hoe die het liefst
+              systeem praat, afhankelijk van waar de klant op dat moment is en hoe die het liefst
               contact heeft. Achter de schermen is het één doorlopend proces.
             </p>
             <p className="va-aa-thesis-big va-reveal" data-stagger={4}>
@@ -86,7 +86,7 @@ export default function Aanpak() {
               title="Voice agent"
               role="Belt en neemt op"
               p="Olivia of Alexander belt nieuwe leads binnen 60 seconden, neemt inkomende telefoontjes aan buiten kantooruren, en voert volledige kwalificatiegesprekken in vloeiend Nederlands."
-              when="Logisch wanneer je doelgroep liever belt of als snelheid het verschil maakt — dakkapel, kozijnen, solar, installatie."
+              when="Logisch wanneer je doelgroep liever belt of als snelheid het verschil maakt, dakkapel, kozijnen, solar, installatie."
             />
             <Channel
               num="02 / 04"
@@ -101,14 +101,14 @@ export default function Aanpak() {
               title="WhatsApp"
               role="Houdt het warm"
               p="Beantwoordt vragen, stuurt bevestigingen, herinnert aan afspraken, en houdt het gesprek levend in het kanaal waar Nederlanders het liefst zitten."
-              when="Logisch wanneer klanten meerdere keren contact hebben voordat ze beslissen — of als de leadtijd lang is."
+              when="Logisch wanneer klanten meerdere keren contact hebben voordat ze beslissen, of als de leadtijd lang is."
             />
             <Channel
               num="04 / 04"
               title="SMS-opvolging"
               role="Sluit de cirkel"
               p="Stuurt geautomatiseerde maar persoonlijke opvolgberichten ná de offerte, ná de afspraak, of als een lead stilvalt. Brengt 'verloren' leads terug."
-              when="Logisch wanneer je merkt dat offertes worden uitgebracht maar daarna stil blijven — de fase waar 60% van de deals weglekt."
+              when="Logisch wanneer je merkt dat offertes worden uitgebracht maar daarna stil blijven. Dat is de fase waar de meeste deals weglekken."
               stagger={2}
             />
           </div>
@@ -121,7 +121,7 @@ export default function Aanpak() {
           <div className="va-aa-journey-head va-reveal">
             <span className="va-mono">Het volledige traject</span>
             <h2 className="va-h2">
-              Van eerste contact tot na de offerte —{" "}
+              Van eerste contact tot na de offerte:{" "}
               <em className="va-italic-gold">geen gat in de keten.</em>
             </h2>
           </div>
@@ -131,7 +131,7 @@ export default function Aanpak() {
               num="01"
               when="T = 0 minuten"
               title="Lead komt binnen"
-              p="Via formulier, telefoon, WhatsApp of een advertentie-klik. Het maakt niet uit waar — het systeem registreert de lead direct en bepaalt welke route past bij dat type contact."
+              p="Via formulier, telefoon, WhatsApp of een advertentie-klik. Het maakt niet uit waar, het systeem registreert de lead direct en bepaalt welke route past bij dat type contact."
               chips={["Voice", "Chat", "WhatsApp"]}
             />
             <Stage
@@ -145,14 +145,14 @@ export default function Aanpak() {
               num="03"
               when="In het gesprek"
               title="Kwalificatie"
-              p="Het systeem stelt de juiste vragen: budget, timing, locatie, wat de klant écht zoekt. Niet als enquête — als gesprek. Geen afhakers door starre formulieren."
+              p="Het systeem stelt de juiste vragen: budget, timing, locatie, wat de klant écht zoekt. Niet als enquête maar als gesprek. Geen afhakers door starre formulieren."
               chips={["Voice", "Chat"]}
             />
             <Stage
               num="04"
               when="Direct erna"
               title="Afspraak ingepland"
-              p="Een gekwalificeerde afspraak wordt direct in jouw agenda gezet. De klant krijgt een bevestiging via WhatsApp en SMS — geen heen-en-weer, geen no-shows door vergeten datums."
+              p="Een gekwalificeerde afspraak wordt direct in jouw agenda gezet. De klant krijgt een bevestiging via WhatsApp en SMS: geen heen-en-weer, geen no-shows door vergeten datums."
               chips={["WhatsApp", "SMS"]}
             />
             <Stage
@@ -183,7 +183,7 @@ export default function Aanpak() {
           <p className="va-reveal" data-stagger={3}>
             Een dakkapelbedrijf heeft een ander systeem nodig dan een adviespraktijk. Een
             installateur met 20 leads per dag iets anders dan een specialist met 3 grote opdrachten
-            per maand. Daarom beginnen we altijd met luisteren — niet met bouwen.
+            per maand. Daarom beginnen we altijd met luisteren, niet met bouwen.
           </p>
         </div>
       </section>
@@ -193,36 +193,35 @@ export default function Aanpak() {
         <div className="va-wrap">
           <div className="va-aa-scan-card va-reveal">
             <span className="va-mono">De logische start</span>
-            <div className="va-aa-price">€1.500</div>
             <h2 className="va-h2">
-              De AI Scan. <em className="va-italic-gold">Eerst luisteren,</em> dan pas bouwen.
+              <em className="va-italic-gold">Eerst luisteren,</em> dan pas bouwen.
             </h2>
             <p>
-              Een diepgaande analyse van je huidige proces. We kijken waar leads weglekken, welke
-              kanalen passen bij jouw branche, en welk traject het meeste oplevert. Pas daarna
-              beslissen we samen of we doorgaan.
+              We beginnen met een analyse van je huidige proces. Waar lekken leads weg, welke
+              kanalen passen bij jouw branche, en welk traject levert het meeste op. Pas daarna
+              beslissen we samen of we doorgaan, en wat het gaat kosten.
             </p>
 
             <div className="va-aa-scan-deliverables">
               <div className="va-aa-scan-item">
-                <span className="va-mono">01 — Onderzoek</span>
+                <span className="va-mono">01 · Onderzoek</span>
                 <p>Twee gesprekken met jou en je team om het huidige proces door te lopen.</p>
               </div>
               <div className="va-aa-scan-item">
-                <span className="va-mono">02 — Analyse</span>
+                <span className="va-mono">02 · Analyse</span>
                 <p>
                   Concrete kaart van waar leads weglekken en welke kanalen het verschil maken.
                 </p>
               </div>
               <div className="va-aa-scan-item">
-                <span className="va-mono">03 — Plan</span>
+                <span className="va-mono">03 · Plan</span>
                 <p>Voorstel met fasen, kosten en een eerlijke schatting van de impact.</p>
               </div>
             </div>
 
             <Magnetic>
               <Link to="/contact" className="va-btn va-btn-primary">
-                Boek je AI Scan <span className="va-arr">→</span>
+                Plan een gesprek <span className="va-arr">→</span>
               </Link>
             </Magnetic>
           </div>
@@ -541,15 +540,6 @@ const aanpakStyles = `
     border-radius: 20px;
     padding: 64px clamp(32px, 5vw, 72px);
     text-align: center;
-  }
-  .va-aa-price {
-    font-family: var(--display);
-    font-weight: 400;
-    font-size: clamp(56px, 7vw, 88px);
-    line-height: 1;
-    color: var(--gold);
-    letter-spacing: -0.01em;
-    margin: 16px 0 32px;
   }
   .va-aa-scan-card .va-mono { display: inline-block; margin-bottom: 6px; }
   .va-aa-scan-card h2 { max-width: 22ch; margin: 0 auto 28px; }

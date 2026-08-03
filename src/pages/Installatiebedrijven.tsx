@@ -7,7 +7,7 @@ const copy: NicheCopy = {
     line1: "Mis jij ook gesprekken",
     accent: "terwijl je op het dak staat?",
     lede:
-      "Elke gemiste oproep is een gemiste offerte. Onze AI voice agent pakt de telefoon op — altijd. Ook als jij op locatie bent.",
+      "Elke gemiste oproep is een gemiste offerte. Onze AI voice agent pakt de telefoon op, altijd. Ook als jij op locatie bent.",
   },
   pain: {
     title: "Herken jij dit?",
@@ -17,7 +17,7 @@ const copy: NicheCopy = {
       {
         title: "Gemiste oproepen op locatie",
         body:
-          "Je staat op een dak of onder een cv-ketel — de telefoon gaat, maar je kunt hem niet opnemen. De klant belt door naar de concurrent.",
+          "Je staat op een dak of onder een cv-ketel, de telefoon gaat, maar je kunt hem niet opnemen. De klant belt door naar de concurrent.",
       },
       {
         title: "Klanten gaan naar de concurrent",
@@ -34,7 +34,7 @@ const copy: NicheCopy = {
   flow: {
     title: "Hoe het werkt",
     body:
-      "Geen lange onboarding. Geen technische kennis vereist. Jij vult een formulier in — wij bellen jou terug.",
+      "Geen lange onboarding. Geen technische kennis vereist. Jij vult een formulier in, wij bellen jou terug.",
     steps: [
       {
         title: "Vul het formulier in",
@@ -43,7 +43,7 @@ const copy: NicheCopy = {
       {
         title: "Onze voice agent belt jou terug",
         body:
-          "Je ervaart exact hoe jouw toekomstige klanten de agent zouden horen. Dit is de demo — geen PowerPoint, gewoon het echte product.",
+          "Je ervaart exact hoe jouw toekomstige klanten de agent zouden horen. Dit is de demo, geen PowerPoint, gewoon het echte product.",
       },
       {
         title: "Jij beslist of je live wilt gaan",
@@ -54,7 +54,7 @@ const copy: NicheCopy = {
   },
   capabilities: {
     title: "Wat de voice agent voor jou doet",
-    body: "Afgestemd op installatiebedrijven — van loodgieters tot elektriciens.",
+    body: "Afgestemd op installatiebedrijven: van loodgieters tot elektriciens.",
     items: [
       {
         title: "24/7 bereikbaar",
@@ -69,7 +69,7 @@ const copy: NicheCopy = {
       {
         title: "Plant afspraken in",
         body:
-          "Koppelt aan jouw agenda en plant direct een afspraak in — zonder dat jij iets hoeft te doen.",
+          "Koppelt aan jouw agenda en plant direct een afspraak in, zonder dat jij iets hoeft te doen.",
       },
       {
         title: "Kwalificeert leads",
@@ -84,11 +84,10 @@ const copy: NicheCopy = {
       {
         title: "Geen gemiste kansen meer",
         body:
-          "Elke beller krijgt direct een professioneel antwoord — ook als jij op locatie bezig bent.",
+          "Elke beller krijgt direct een professioneel antwoord, ook als jij op locatie bezig bent.",
       },
     ],
   },
-  formUrl: "https://api.leadconnectorhq.com/widget/form/1NrTnNfSyP5VafVmAY7h",
 };
 
 export default function Installatiebedrijven() {

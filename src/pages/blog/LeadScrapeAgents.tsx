@@ -6,7 +6,7 @@ export default function LeadScrapeAgents() {
       category="Lead generatie"
       date="2 december 2025"
       title="Lead Scrape Agents: De slimme AI die nieuwe leads zoekt, verrijkt en doorstuurt"
-      lede="Iedere ondernemer wil meer leads — maar niemand heeft tijd om ze handmatig te zoeken. De Lead Scrape Agents van Voxa Auris lossen dat probleem op."
+      lede="Iedere ondernemer wil meer leads, maar niemand heeft tijd om ze handmatig te zoeken. De Lead Scrape Agents van Voxa Auris lossen dat probleem op."
     >
       <p>
         Ze vinden, filteren en verrijken automatisch nieuwe leads die passen bij jouw doelgroep,
@@ -36,7 +36,7 @@ export default function LeadScrapeAgents() {
       <h3>Waarom handmatig leads zoeken verleden tijd is</h3>
       <p>
         Gemiddeld kost het een salesmedewerker 3 uur per dag aan research. De AI doet dit in
-        minuten — en veel nauwkeuriger. Zo blijft je team bezig met gesprekken, niet met
+        minuten, en veel nauwkeuriger. Zo blijft je team bezig met gesprekken, niet met
         spreadsheets.
       </p>
 
@@ -74,7 +74,7 @@ export default function LeadScrapeAgents() {
       <h2>De voordelen voor ondernemers</h2>
 
       <h3>1. Altijd verse leads in je pipeline</h3>
-      <p>Elke dag nieuwe contacten die voldoen aan jouw criteria — zonder extra werk.</p>
+      <p>Elke dag nieuwe contacten die voldoen aan jouw criteria, zonder extra werk.</p>
 
       <h3>2. Minder handmatig werk voor je sales team</h3>
       <p>Je salesafdeling hoeft niet meer te zoeken, maar kan focussen op gesprekken en deals.</p>
@@ -87,7 +87,7 @@ export default function LeadScrapeAgents() {
 
       <h3>4. Directe opvolging binnen 5 minuten</h3>
       <p>
-        In combinatie met de Outbound Agent worden leads direct gebeld of gemaild — precies binnen
+        In combinatie met de Outbound Agent worden leads direct gebeld of gemaild, precies binnen
         de golden 5-minute window.
       </p>
 
@@ -114,7 +114,7 @@ export default function LeadScrapeAgents() {
       <h3>Social Media Agents voor merkzichtbaarheid</h3>
       <p>Gebruik social data als bron voor nieuwe leaddoelen en engagementanalyse.</p>
 
-      <p>Zo vormt Voxa Auris een volledige AI-pijplijn — van lead tot klant.</p>
+      <p>Zo vormt Voxa Auris een volledige AI-pijplijn, van lead tot klant.</p>
 
       <h2>Veelvoorkomende use cases</h2>
 
@@ -142,7 +142,7 @@ export default function LeadScrapeAgents() {
       <p>Afhankelijk van je doelgroep: dagelijks, wekelijks of op aanvraag.</p>
 
       <h3>3. Kan de AI leads direct opvolgen?</h3>
-      <p>Ja — via onze integratie met de Outbound Agent.</p>
+      <p>Ja, via onze integratie met de Outbound Agent.</p>
 
       <h3>4. Welke bronnen gebruikt de Lead Scrape Agent?</h3>
       <p>Bedrijvengidsen, LinkedIn-profielen, websites, vacaturebanken en openbare databronnen.</p>
@@ -163,7 +163,7 @@ export default function LeadScrapeAgents() {
       <p>
         Met de Lead Scrape Agents van Voxa Auris hoef je nooit meer te zoeken naar nieuwe klanten.
         De AI doet het zware werk: vinden, filteren, valideren en opvolgen. Samen met je andere
-        Voxa Auris Agents — inbound, outbound, RAG en social — vormt het een krachtig systeem dat
+        Voxa Auris Agents: inbound, outbound, RAG en social, vormt het een krachtig systeem dat
         je bedrijf laat groeien, automatisch en meetbaar.
       </p>
 

@@ -5,8 +5,8 @@ import Magnetic from "@/components/site/Magnetic";
 const values = [
   {
     cap: "Missie",
-    title: "AI binnen handbereik van het MKB.",
-    body: "Wij maken AI-technologie toegankelijk voor ondernemers, zodat ze sneller groeien zonder meer personeel aan te nemen.",
+    title: "Meer tijd voor de verkoop.",
+    body: "Een verkoop wordt gedaan bij de klant. Wij zorgen dat aanvragen direct worden opgevolgd, gekwalificeerd en ingepland. Jij hoeft alleen nog te verkopen.",
   },
   {
     cap: "Visie",
@@ -14,14 +14,14 @@ const values = [
     body: "Een wereld waarin elke ondernemer 24/7 bereikbaar is en geen enkele klant meer hoeft te wachten op antwoord.",
   },
   {
-    cap: "Team",
+    cap: "Achtergrond",
     title: "Bouwen, niet praten.",
-    body: "Experts in AI, voice technology en business automation die passie hebben voor innovatie en klantsucces.",
+    body: "Ik kom uit de sales, niet uit de techniek. Ik weet hoe het voelt als een lead afkoelt terwijl jij bij een andere klant staat. Die ervaring zit in elk systeem dat ik bouw: eerst begrijpen hoe het verkoopgesprek loopt, dan pas de techniek eromheen.",
   },
   {
     cap: "Resultaat",
     title: "Snellere reactie. Meer omzet.",
-    body: "Snellere responstijden, hogere conversies en tevreden klanten — dat is waar wij voor staan.",
+    body: "Snellere responstijden, hogere conversies en tevreden klanten. Daar staan wij voor.",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function Over() {
             className="va-body"
             style={{ fontSize: 19, lineHeight: 1.55, maxWidth: 580 }}
           >
-            Een eerlijk verhaal over het probleem dat me niet meer losliet — en waarom Voxa Auris
+            Een eerlijk verhaal over het probleem dat me niet meer losliet, en waarom Voxa Auris
             er nu staat.
           </p>
         </div>
@@ -55,16 +55,17 @@ export default function Over() {
       <section className="va-section va-section-darker">
         <div className="va-wrap va-over-story">
           <p className="va-reveal">
-            Ik had een autodetailing bedrijf. In een paar maanden kreeg ik 70 leads binnen via
+            Ik had een autodetailing bedrijf. In twee weken kreeg ik 70 leads binnen via
             advertenties. Ik was trots.
           </p>
           <p className="va-reveal" data-stagger={2}>
             Maar aan het einde van de maand had ik nul nieuwe klanten.
           </p>
           <p className="va-reveal" data-stagger={3}>
-            Niet omdat het product slecht was. Niet omdat de prijs niet klopte. Maar omdat ik leads
-            te laat terugbelde. Soms een uur later, soms de volgende ochtend. Dan was de klant al
-            ergens anders.
+            Niet omdat het werk niet goed was. Niet omdat de prijs niet klopte. Maar omdat ik die
+            leads te laat opvolgde. Soms uren later, soms dagen. En in die tijd gebeurt er van
+            alles: de klant heeft al iemand anders gevonden, is het vergeten, of heeft geen
+            interesse meer.
           </p>
           <p className="va-reveal" data-stagger={4}>
             Dat frustreerde me genoeg om te zoeken naar een oplossing. Ik vond geen systeem dat
@@ -79,7 +80,7 @@ export default function Over() {
             die al verder zijn gegaan.
           </p>
           <p className="va-over-sign va-mono va-reveal" data-stagger={6}>
-            — Mick Stadhouders, oprichter
+            Mick Stadhouders, oprichter
           </p>
         </div>
       </section>

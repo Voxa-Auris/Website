@@ -20,7 +20,7 @@ export default function AIChatbots() {
       <p>
         Een AI chatbot is software die gesprekken voert alsof je met een medewerker praat. Dankzij
         taalmodellen, intent-detectie en je eigen kennisbank (via RAG: Retrieval-Augmented
-        Generation) kan de bot context snappen, vervolgvragen stellen en taken uitvoeren — zoals
+        Generation) kan de bot context snappen, vervolgvragen stellen en taken uitvoeren, zoals
         afspraak plannen, offerte sturen of orderstatus checken.
       </p>
       <p>
@@ -60,64 +60,64 @@ export default function AIChatbots() {
       <h3>1–5: Leadkwalificatie, FAQ, offertes, afspraken, orderstatus</h3>
       <ul>
         <li>
-          <strong>Leadkwalificatie</strong> — pre-kwalificerende vragen (budget, timing, behoefte)
+          <strong>Leadkwalificatie</strong>: pre-kwalificerende vragen (budget, timing, behoefte)
           en slim routeren.
         </li>
         <li>
-          <strong>FAQ-automatisering</strong> — openingstijden, prijzen, levertijden, garanties.
+          <strong>FAQ-automatisering</strong>: openingstijden, prijzen, levertijden, garanties.
         </li>
         <li>
-          <strong>Offerte-aanvraag</strong> — de juiste velden verzamelen en CRM-deal aanmaken.
+          <strong>Offerte-aanvraag</strong>: de juiste velden verzamelen en CRM-deal aanmaken.
         </li>
         <li>
-          <strong>Afspraakplanning</strong> — integratie met Google/Outlook + beschikbare slots.
+          <strong>Afspraakplanning</strong>: integratie met Google/Outlook + beschikbare slots.
         </li>
         <li>
-          <strong>Orderstatus</strong> — koppeling met e-commerce/ERP voor realtime updates.
+          <strong>Orderstatus</strong>: koppeling met e-commerce/ERP voor realtime updates.
         </li>
       </ul>
 
       <h3>6–10: Onboarding, upsell/cross-sell, retouren, heractivatie, abandon cart</h3>
       <ul>
         <li>
-          <strong>Onboarding-assistent</strong> — stapsgewijs starten, checklists, vervolgtips.
+          <strong>Onboarding-assistent</strong>: stapsgewijs starten, checklists, vervolgtips.
         </li>
         <li>
-          <strong>Upsell / cross-sell</strong> — relevante suggesties op basis van gedrag.
+          <strong>Upsell / cross-sell</strong>: relevante suggesties op basis van gedrag.
         </li>
         <li>
-          <strong>Retouren en support</strong> — automatisch RMA-nummer en label genereren.
+          <strong>Retouren en support</strong>: automatisch RMA-nummer en label genereren.
         </li>
         <li>
-          <strong>Heractivatie</strong> — inactieve klanten benaderen met persoonlijke incentive.
+          <strong>Heractivatie</strong>: inactieve klanten benaderen met persoonlijke incentive.
         </li>
         <li>
-          <strong>Abandon cart</strong> — wegklikkers opvangen met vriendelijke reminder.
+          <strong>Abandon cart</strong>: wegklikkers opvangen met vriendelijke reminder.
         </li>
       </ul>
 
       <h3>11–17: After-hours support, events, RAG-Q&A, feedback, NPS, betalingen, escalaties</h3>
       <ul>
         <li>
-          <strong>After-hours</strong> — 's avonds/weekend service-vragen opvangen.
+          <strong>After-hours</strong>: 's avonds/weekend service-vragen opvangen.
         </li>
         <li>
-          <strong>Eventregistratie</strong> — registreren, bevestigen, reminders, QR-tickets.
+          <strong>Eventregistratie</strong>: registreren, bevestigen, reminders, QR-tickets.
         </li>
         <li>
-          <strong>Kennisbank-Q&A (RAG)</strong> — betrouwbare antwoorden uit eigen documenten.
+          <strong>Kennisbank-Q&A (RAG)</strong>: betrouwbare antwoorden uit eigen documenten.
         </li>
         <li>
-          <strong>Feedback verzamelen</strong> — gericht om reviews vragen na afhandeling.
+          <strong>Feedback verzamelen</strong>: gericht om reviews vragen na afhandeling.
         </li>
         <li>
-          <strong>NPS / CSAT</strong> — klanttevredenheid meten en loggen in het dashboard.
+          <strong>NPS / CSAT</strong>: klanttevredenheid meten en loggen in het dashboard.
         </li>
         <li>
-          <strong>Betalingen</strong> — veilige betaallinks via PSP-koppeling (Mollie/Stripe).
+          <strong>Betalingen</strong>: veilige betaallinks via PSP-koppeling (Mollie/Stripe).
         </li>
         <li>
-          <strong>Slimme escalaties</strong> — bij frustratie/complexiteit doorzetten met context.
+          <strong>Slimme escalaties</strong>: bij frustratie/complexiteit doorzetten met context.
         </li>
       </ul>
 
@@ -132,16 +132,16 @@ export default function AIChatbots() {
       <h3>Intent-detectie, tone of voice, fallback-strategieën</h3>
       <ul>
         <li>
-          <strong>Intent-detectie</strong> — herken het doel achter de vraag.
+          <strong>Intent-detectie</strong>: herken het doel achter de vraag.
         </li>
         <li>
-          <strong>Tone of voice</strong> — vriendelijk, direct, oplossingsgericht.
+          <strong>Tone of voice</strong>: vriendelijk, direct, oplossingsgericht.
         </li>
         <li>
-          <strong>Fallback</strong> — bij onduidelijkheid verduidelijkende vragen of keuzeknoppen.
+          <strong>Fallback</strong>: bij onduidelijkheid verduidelijkende vragen of keuzeknoppen.
         </li>
         <li>
-          <strong>Begrenzing</strong> — vastleggen wat de bot wel/niet mag toezeggen.
+          <strong>Begrenzing</strong>: vastleggen wat de bot wel/niet mag toezeggen.
         </li>
       </ul>
 
@@ -158,13 +158,13 @@ export default function AIChatbots() {
       <h3>Koppelingen met HubSpot/Pipedrive, Google Calendar, PSP's</h3>
       <ul>
         <li>
-          <strong>CRM</strong> — leads aanmaken, deals updaten, notities loggen.
+          <strong>CRM</strong>: leads aanmaken, deals updaten, notities loggen.
         </li>
         <li>
-          <strong>Agenda</strong> — afspraak inboeken, verzetten, reminders.
+          <strong>Agenda</strong>: afspraak inboeken, verzetten, reminders.
         </li>
         <li>
-          <strong>PSP</strong> — veilige betaalflows starten, betaalstatus ophalen.
+          <strong>PSP</strong>: veilige betaalflows starten, betaalstatus ophalen.
         </li>
       </ul>
 
@@ -180,26 +180,26 @@ export default function AIChatbots() {
       <h3>Conversieratio, first response time, containment, AHT</h3>
       <ul>
         <li>
-          <strong>First Response Time</strong> — hoe snel krijgt een klant antwoord?
+          <strong>First Response Time</strong>: hoe snel krijgt een klant antwoord?
         </li>
         <li>
-          <strong>Containment Rate</strong> — % gesprekken zonder medewerker.
+          <strong>Containment Rate</strong>: % gesprekken zonder medewerker.
         </li>
         <li>
-          <strong>Conversieratio</strong> — % gesprekken dat leidt tot afspraak/aanvraag/verkoop.
+          <strong>Conversieratio</strong>: % gesprekken dat leidt tot afspraak/aanvraag/verkoop.
         </li>
         <li>
-          <strong>Average Handle Time</strong> — gemiddelde afhandeltijd per case.
+          <strong>Average Handle Time</strong>: gemiddelde afhandeltijd per case.
         </li>
         <li>
-          <strong>CSAT / NPS</strong> — hoe tevreden zijn je klanten?
+          <strong>CSAT / NPS</strong>: hoe tevreden zijn je klanten?
         </li>
       </ul>
 
       <h3>AB-testen van promoties en microcopy</h3>
       <p>
-        Test begroetingen, CTA-teksten en incentives. Vaak levert kleine copy-tuning al 5–15% meer
-        conversie op. Ons team helpt bij hypothese, test, analyse en rollout.
+        Test begroetingen, CTA-teksten en incentives. Kleine aanpassingen in de tekst leveren
+        vaak meer op dan een nieuwe functie. Wij helpen bij hypothese, test, analyse en rollout.
       </p>
 
       <BlogCTA
@@ -222,7 +222,7 @@ export default function AIChatbots() {
       <h3>Don'ts</h3>
       <ul>
         <li>Niet te veel keuzeknoppen (keuzestress).</li>
-        <li>Geen "verstopte" handoff — maak menselijk contact zichtbaar.</li>
+        <li>Geen "verstopte" handoff, maak menselijk contact zichtbaar.</li>
         <li>Geen los zand: zorg voor koppelingen, anders is het alleen Q&A.</li>
         <li>Vermijd "sorry, ik snap het niet" zonder vervolgoptie.</li>
       </ul>
@@ -237,7 +237,7 @@ export default function AIChatbots() {
 
       <h3>2. Hoe natuurlijk klinkt de chatbot?</h3>
       <p>
-        We trainen op jouw tone of voice. Korte, heldere zinnen, empathie en context — geen
+        We trainen op jouw tone of voice. Korte, heldere zinnen, empathie en context, geen
         robottaal.
       </p>
 
@@ -279,7 +279,7 @@ export default function AIChatbots() {
         AI Chatbots zijn je 24/7 frontlinie: ze beantwoorden vragen, plannen afspraken,
         kwalificeren leads en starten betalingen. In combinatie met de voice agents van Voxa Auris
         krijg je één coherent systeem dat meer omzet, lagere wachttijden en hogere
-        klanttevredenheid oplevert. Start klein, koppel goed, meet slim — en schaal wat werkt.
+        klanttevredenheid oplevert. Start klein, koppel goed, meet slim, en schaal wat werkt.
       </p>
 
       <BlogCTA
