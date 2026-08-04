@@ -36,15 +36,6 @@ const posts = [
     slug: "rag-agents",
   },
   {
-    title:
-      "Social Media Agents: De AI marketingassistent die 24/7 post, plant en reageert",
-    excerpt:
-      "Consistent posten op social media is belangrijk, maar in de praktijk schiet het er vaak bij in. Social Media Agents nemen het over.",
-    date: "2 december 2025",
-    category: "Marketing",
-    slug: "social-media-agents",
-  },
-  {
     title: "Lead Scrape Agents: De slimme AI die nieuwe leads zoekt, verrijkt en doorstuurt",
     excerpt:
       "Iedere ondernemer wil meer leads, maar niemand heeft tijd om ze handmatig te zoeken. Lead Scrape Agents vinden en verrijken automatisch.",

@@ -194,28 +194,39 @@ export default function Aanpak() {
           <div className="va-aa-scan-card va-reveal">
             <span className="va-mono">De logische start</span>
             <h2 className="va-h2">
-              <em className="va-italic-gold">Eerst luisteren,</em> dan pas bouwen.
+              <em className="va-italic-gold">Eerst kijken of het past.</em> Dan pas bouwen.
             </h2>
             <p>
-              We beginnen met een analyse van je huidige proces. Waar lekken leads weg, welke
-              kanalen passen bij jouw branche, en welk traject levert het meeste op. Pas daarna
-              beslissen we samen of we doorgaan, en wat het gaat kosten.
+              Het begint met één gesprek. Daarin kijken we of dit jouw probleem echt oplost en wat
+              het gaat kosten. Past het niet, dan zeg ik dat gewoon. Past het wel, dan ligt de rest
+              van het traject hieronder.
             </p>
 
             <div className="va-aa-scan-deliverables">
               <div className="va-aa-scan-item">
-                <span className="va-mono">01 · Onderzoek</span>
-                <p>Twee gesprekken met jou en je team om het huidige proces door te lopen.</p>
-              </div>
-              <div className="va-aa-scan-item">
-                <span className="va-mono">02 · Analyse</span>
+                <span className="va-mono">01 · Gesprek</span>
                 <p>
-                  Concrete kaart van waar leads weglekken en welke kanalen het verschil maken.
+                  We kijken samen of dit jouw probleem oplost, en wat het kost. Nog nergens aan
+                  vast.
                 </p>
               </div>
               <div className="va-aa-scan-item">
-                <span className="va-mono">03 · Plan</span>
-                <p>Voorstel met fasen, kosten en een eerlijke schatting van de impact.</p>
+                <span className="va-mono">02 · Onboarding</span>
+                <p>
+                  Ga je akkoord, dan bepalen we samen hoe we het in jouw bedrijf inrichten.
+                </p>
+              </div>
+              <div className="va-aa-scan-item">
+                <span className="va-mono">03 · Bouwen</span>
+                <p>
+                  Ik bouw het systeem. Jij hoort niets, behalve als ik iets van je nodig heb.
+                </p>
+              </div>
+              <div className="va-aa-scan-item">
+                <span className="va-mono">04 · Live</span>
+                <p>
+                  Bij oplevering lopen we het samen door. Klopt het, dan zetten we het aan.
+                </p>
               </div>
             </div>
 
@@ -289,53 +300,10 @@ function Stage({
   );
 }
 
+/* .va-aa-hero, .va-aa-hero-grid, .va-aa-breadcrumb, .va-aa-sep, .va-aa-current,
+   .va-hero-dot en .va-aa-scan(-card) staan in src/index.css: ze worden door
+   meerdere pagina's gebruikt en moeten dus niet page-scoped zijn. */
 const aanpakStyles = `
-  .va-aa-hero {
-    position: relative;
-    padding-top: 200px;
-    padding-bottom: 120px;
-    overflow: hidden;
-  }
-  .va-aa-hero-grid {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background-image:
-      linear-gradient(to right, rgba(244,221,141,0.04) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(244,221,141,0.04) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 10%, transparent 75%);
-    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 10%, transparent 75%);
-  }
-  .va-aa-hero-inner { position: relative; }
-  .va-aa-breadcrumb {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 36px;
-  }
-  .va-aa-breadcrumb a {
-    font-family: var(--mono);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--cream-mute);
-    transition: color 220ms var(--ease);
-  }
-  .va-aa-breadcrumb a:hover { color: var(--cream); }
-  .va-aa-sep {
-    color: var(--cream-mute);
-    opacity: 0.4;
-    font-family: var(--mono);
-    font-size: 12px;
-  }
-  .va-aa-current {
-    font-family: var(--mono);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
   .va-aa-hero-h1 { max-width: 16ch; margin-bottom: 36px; }
   .va-aa-hero-lede {
     max-width: 580px;
@@ -519,50 +487,22 @@ const aanpakStyles = `
   .va-aa-maatwerk h2 { max-width: 880px; margin: 0 auto 36px; }
   .va-aa-maatwerk p { margin: 0 auto; color: var(--cream); max-width: 60ch; font-size: 17px; }
 
-  /* AI scan */
-  .va-aa-scan {
-    position: relative;
-    padding-top: clamp(120px, 14vw, 180px);
-    padding-bottom: clamp(120px, 14vw, 180px);
-  }
-  .va-aa-scan::before {
-    content: "";
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(244,221,141,0.05), transparent 70%);
-    pointer-events: none;
-  }
-  .va-aa-scan-card {
-    position: relative;
-    max-width: 880px;
-    margin: 0 auto;
-    background: var(--ink-soft);
-    border: 1px solid rgba(244,221,141,0.18);
-    border-radius: 20px;
-    padding: 64px clamp(32px, 5vw, 72px);
-    text-align: center;
-  }
-  .va-aa-scan-card .va-mono { display: inline-block; margin-bottom: 6px; }
-  .va-aa-scan-card h2 { max-width: 22ch; margin: 0 auto 28px; }
-  .va-aa-scan-card > p { margin: 0 auto 40px; max-width: 52ch; color: var(--cream); }
+  /* Stappen in de scan-kaart */
   .va-aa-scan-deliverables {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 36px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
     text-align: left;
     margin: 48px 0;
     padding-top: 36px;
     border-top: 1px solid var(--ink-line);
   }
-  @media (max-width: 720px) {
+  @media (max-width: 980px) {
+    .va-aa-scan-deliverables { grid-template-columns: 1fr 1fr; gap: 32px 28px; }
+  }
+  @media (max-width: 560px) {
     .va-aa-scan-deliverables { grid-template-columns: 1fr; gap: 24px; }
   }
   .va-aa-scan-item .va-mono { display: block; margin-bottom: 10px; color: var(--gold-deep); }
   .va-aa-scan-item p { margin: 0; font-size: 14px; line-height: 1.55; max-width: 28ch; color: var(--cream); }
-
-  .va-hero-dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    background: var(--gold);
-    box-shadow: 0 0 0 4px rgba(244,221,141,0.12);
-    display: inline-block;
-  }
 `;

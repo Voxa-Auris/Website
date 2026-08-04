@@ -20,7 +20,6 @@ import InboundVoiceAgents from "./pages/blog/InboundVoiceAgents";
 import OutboundAIAgents from "./pages/blog/OutboundAIAgents";
 import AIChatbots from "./pages/blog/AIChatbots";
 import RAGAgents from "./pages/blog/RAGAgents";
-import SocialMediaAgents from "./pages/blog/SocialMediaAgents";
 import LeadScrapeAgents from "./pages/blog/LeadScrapeAgents";
 
 const queryClient = new QueryClient();
@@ -41,7 +40,9 @@ const App = () => (
           <Route path="/blog/outbound-ai-agents" element={<OutboundAIAgents />} />
           <Route path="/blog/ai-chatbots" element={<AIChatbots />} />
           <Route path="/blog/rag-agents" element={<RAGAgents />} />
-          <Route path="/blog/social-media-agents" element={<SocialMediaAgents />} />
+          {/* Social Media Agents is uit de blog gehaald; oude URL doorsturen
+              in plaats van 404, want hij stond in de sitemap. */}
+          <Route path="/blog/social-media-agents" element={<Navigate to="/blog" replace />} />
           <Route path="/blog/lead-scrape-agents" element={<LeadScrapeAgents />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />

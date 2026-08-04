@@ -352,8 +352,8 @@ export default function Index() {
             <em className="va-italic-gold">mis jij</em> deze week?
           </h1>
           <p className="va-body va-reveal" data-stagger={2}>
-            Vul je gegevens in. Alexander belt je binnen 60 seconden met een korte demo.
-            Geen gesprek met een verkoper, gewoon de AI in actie.
+            Laat je nummer achter, vul op de volgende pagina kort je bedrijf in, en Alexander belt
+            je binnen 60 seconden. Geen gesprek met een verkoper, gewoon de AI in actie.
           </p>
           <form
             className="va-phone-form va-reveal"
@@ -375,7 +375,7 @@ export default function Index() {
             />
             <Magnetic>
               <button type="submit" className="va-btn va-btn-primary">
-                Laat Alexander bellen
+                Ga verder <span className="va-arr">→</span>
               </button>
             </Magnetic>
           </form>
@@ -580,10 +580,12 @@ const indexStyles = `
     margin-left: auto;
   }
   .va-ornament-num sup {
-    font-size: 0.4em;
-    vertical-align: top;
+    font-size: 0.42em;
+    vertical-align: baseline;
+    line-height: 1;
+    top: 0;
     color: var(--cream-mute);
-    margin-left: 2px;
+    margin-left: 0.06em;
   }
   .va-ornament-line {
     position: absolute;
@@ -666,11 +668,15 @@ const indexStyles = `
     letter-spacing: -0.01em;
     margin-bottom: 16px;
   }
+  /* Op de basislijn, niet als superscript: met line-height 0.95 duwde
+     vertical-align:top het teken tot boven het label uit. */
   .va-stat-figure sup {
-    font-size: 0.4em;
-    vertical-align: top;
+    font-size: 0.42em;
+    vertical-align: baseline;
+    line-height: 1;
+    top: 0;
     color: var(--cream-mute);
-    margin-left: 2px;
+    margin-left: 0.06em;
   }
   .va-stat p {
     margin: 0;

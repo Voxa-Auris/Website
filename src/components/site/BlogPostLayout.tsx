@@ -152,11 +152,13 @@ const blogStyles = `
     color: var(--gold-deep);
   }
   .va-blog-prose strong { color: var(--cream); font-weight: 500; }
-  .va-blog-prose a {
+  /* :not(.va-btn) is nodig: de CTA-knop staat binnen de prose en kreeg
+     anders goudkleurige tekst op een gouden vlak, dus onleesbaar. */
+  .va-blog-prose a:not(.va-btn) {
     color: var(--gold);
     border-bottom: 1px solid rgba(244,221,141,0.4);
   }
-  .va-blog-prose a:hover { border-color: var(--gold); }
+  .va-blog-prose a:not(.va-btn):hover { border-color: var(--gold); }
 
   .va-blog-cta {
     margin: 56px 0;

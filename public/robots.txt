@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://voxaauris.nl/sitemap.xml
+Sitemap: https://www.voxa-auris.com/sitemap.xml
 
 # Disallow admin/private paths (als die er zijn)
 Disallow: /admin/
