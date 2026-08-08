@@ -21,6 +21,9 @@ const LEEG = {
   website: "",
   email: "",
   phone: "",
+  // Optioneel. Wat hier staat kan de website-scrape niet weten, en het bepaalt
+  // wel hoe realistisch de demo klinkt: soort afspraak, doorlooptijd, proces.
+  werkwijze: "",
 };
 
 interface Props {
@@ -140,6 +143,15 @@ export default function DemoBelkaart({
         <Veld label="je website" name="website" type="text" inputMode="url" autoComplete="url" placeholder="www.jouwbedrijf.nl" value={velden.website} onChange={zet("website")} disabled={klaar} />
         <Veld label="e-mail" name="email" type="email" autoComplete="email" placeholder="jij@jouwbedrijf.nl" value={velden.email} onChange={zet("email")} disabled={klaar} />
         <Veld label="mobiel nummer" name="phone" type="tel" autoComplete="tel" placeholder="06 12 34 56 78" value={velden.phone} onChange={zet("phone")} disabled={klaar} />
+        <VrijVeld
+          label="belangrijke info"
+          name="werkwijze"
+          hint="Vertel kort hoe je bedrijf te werk gaat, zodat de demo zo realistisch mogelijk is."
+          placeholder="Wij werken uitsluitend op afspraak in onze showroom, zodat we alle opties kunnen laten zien. We nemen ongeveer anderhalf uur per klant."
+          value={velden.werkwijze}
+          onChange={zet("werkwijze")}
+          disabled={klaar}
+        />
       </div>
 
       <button type="submit" className="va-btn va-btn-primary va-bk-knop" disabled={bezig || klaar}>
@@ -166,6 +178,26 @@ function Veld({
     <label className="va-bk-rij">
       <span className="va-bk-label">{label}</span>
       <input className="va-bk-input" required {...rest} />
+    </label>
+  );
+}
+
+/** Vrij tekstveld. Niet verplicht, met een regel uitleg boven het invulvak. */
+function VrijVeld({
+  label,
+  hint,
+  ...rest
+}: { label: string; hint: string } & React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
+  return (
+    <label className="va-bk-rij va-bk-rij-vrij">
+      <span className="va-bk-label">
+        {label}
+        <span className="va-bk-optioneel">optioneel</span>
+      </span>
+      <span className="va-bk-vrij">
+        <span className="va-bk-hint">{hint}</span>
+        <textarea className="va-bk-input va-bk-textarea" rows={3} maxLength={800} {...rest} />
+      </span>
     </label>
   );
 }
@@ -239,6 +271,37 @@ const belkaartStyles = `
   .va-bk-input::placeholder { color: #4a463d; }
   .va-bk-input:focus { border-bottom-color: var(--gold-deep); }
   .va-bk-input:disabled { opacity: 0.5; }
+
+  .va-bk-rij-vrij { align-items: start; }
+  .va-bk-rij-vrij .va-bk-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    padding-top: 5px;
+  }
+  .va-bk-optioneel {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: #4a463d;
+  }
+  .va-bk-vrij { display: flex; flex-direction: column; gap: 7px; }
+  .va-bk-hint {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+    color: var(--cream-mute);
+  }
+  .va-bk-textarea {
+    border: 1px solid var(--ink-line);
+    border-radius: 8px;
+    padding: 9px 11px;
+    min-height: 66px;
+    line-height: 1.55;
+    resize: vertical;
+  }
+  .va-bk-textarea:focus { border-color: var(--gold-deep); }
 
   .va-bk-knop {
     margin-top: 24px;
