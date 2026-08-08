@@ -1,123 +1,168 @@
-import { motion } from "framer-motion";
-import { Phone, Mail, MapPin } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
+import PageShell from "@/components/site/PageShell";
+import Magnetic from "@/components/site/Magnetic";
+import DemoBelkaart from "@/components/site/DemoBelkaart";
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <div className="min-h-screen">
-      <Navigation />
-
-      {/* Hero */}
-      <section className="pt-32 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-
-        <div className="container mx-auto px-4 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 glow-text">
-              Praat met <span className="text-primary">ons</span>
-            </h1>
-            <p className="text-xl text-muted-foreground">
-              Vul je gegevens in en we nemen binnen 1 werkdag contact op. Of bel direct.
-            </p>
-          </motion.div>
+    <PageShell title="Contact">
+      <section className="va-aa-hero">
+        <div className="va-aa-hero-grid" aria-hidden />
+        <div className="va-wrap" style={{ position: "relative" }}>
+          <div className="va-aa-breadcrumb">
+            <span className="va-hero-dot" />
+            <Link to="/">Voxa Auris</Link>
+            <span className="va-aa-sep">/</span>
+            <span className="va-aa-current">Contact</span>
+          </div>
+          <h1 className="va-h1" style={{ maxWidth: "16ch", marginBottom: 36 }}>
+            Praat met <em className="va-italic-gold">ons.</em>
+          </h1>
+          <p className="va-body" style={{ fontSize: 19, lineHeight: 1.55, maxWidth: 580 }}>
+            Vul je gegevens in en we nemen binnen 1 werkdag contact op. Of bel direct. Geen
+            wachttijden, geen voicemail.
+          </p>
         </div>
       </section>
 
-      {/* Contact Content */}
-      <section className="py-16 relative">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Contact Info */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl font-bold mb-6 text-primary">
-                Contactgegevens
-              </h2>
+      <section className="va-section va-section-darker">
+        <div className="va-wrap va-contact-grid">
+          {/* Contact info */}
+          <div className="va-reveal">
+            <span className="va-mono">Direct contact</span>
+            <h2 className="va-h2 va-contact-h2">Vier manieren om te bellen, te appen of te mailen.</h2>
 
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Geen wachttijden, geen voicemail — neem direct contact op via onderstaande gegevens.
-              </p>
+            <ul className="va-contact-list">
+              <li>
+                <span className="va-mono">Bel Olivia</span>
+                <a href="tel:+31762057076">+31 76 205 7076</a>
+                <small>Onze AI-receptionist, neemt 24/7 op</small>
+              </li>
+              <li>
+                <span className="va-mono">Mobiel + WhatsApp</span>
+                <a href="tel:+31625251913">+31 6 25 25 19 13</a>
+                <small>
+                  <a href="https://wa.me/31625251913" target="_blank" rel="noopener noreferrer">
+                    Stuur een WhatsApp →
+                  </a>
+                </small>
+              </li>
+              <li>
+                <span className="va-mono">Email</span>
+                <a href="mailto:info@voxa-auris.com">info@voxa-auris.com</a>
+                <small>Respons binnen 1 werkdag</small>
+              </li>
+              <li>
+                <span className="va-mono">Locatie</span>
+                <span className="va-contact-static">Breda, Noord-Brabant</span>
+                <small>Founder-led · KvK 89475216</small>
+              </li>
+            </ul>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Telefoon</h3>
-                    <p className="text-muted-foreground">[TELEFOONNUMMER INVULLEN]</p>
-                  </div>
-                </div>
+            <div style={{ marginTop: 40 }}>
+              <Magnetic>
+                <Link to="/gratis-demo" className="va-btn va-btn-primary">
+                  Vraag een gratis demo <span className="va-arr">→</span>
+                </Link>
+              </Magnetic>
+            </div>
+          </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Email</h3>
-                    <a
-                      href="mailto:info@voxa-auris.com"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      info@voxa-auris.com
-                    </a>
-                    <p className="text-sm text-secondary mt-1">Respons binnen 1 werkdag</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Locatie</h3>
-                    <p className="text-muted-foreground">Amsterdam, Nederland</p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Contact Form */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <div className="p-8 rounded-2xl bg-card border border-border">
-                <h3 className="text-2xl font-bold mb-6">Stuur een bericht</h3>
-
-                {/* Embedded Airtable Form */}
-                <iframe
-                  className="airtable-embed w-full h-[600px] bg-transparent border-0"
-                  src="https://airtable.com/embed/app9GSVUAhLhKwIzt/pagtMd9CNB0XkIpAt/form"
-                  style={{ background: 'transparent', border: 'none' }}
-                  title="Lead Formulier"
-                />
-
-                <p className="text-xs text-muted-foreground text-center mt-4">
-                  Of laat Alexander je bellen — vul je nummer in en we nemen binnen 1 minuut contact op.
-                </p>
-              </div>
-            </motion.div>
+          {/* Form */}
+          <div className="va-reveal" data-stagger={2}>
+            <span className="va-mono">Of laat ons bellen</span>
+            <h3 className="va-contact-form-title">
+              <em className="va-italic-gold">Hoor</em> meteen waar we het over hebben.
+            </h3>
+            <div className="va-contact-form-shell">
+              <DemoBelkaart />
+            </div>
+            <p className="va-contact-formfoot">
+              Olivia belt je binnen een minuut terug met een demo op jouw bedrijf. Geen
+              verkooppraatje, gewoon het product aan de lijn.
+            </p>
           </div>
         </div>
       </section>
 
-      <Footer />
-    </div>
+      <style>{contactStyles}</style>
+    </PageShell>
   );
-};
+}
 
-export default Contact;
+const contactStyles = `
+  .va-contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.45fr) minmax(0, 1fr);
+    gap: 80px;
+    align-items: start;
+  }
+  @media (max-width: 880px) {
+    .va-contact-grid { grid-template-columns: 1fr; gap: 56px; }
+  }
+  .va-contact-h2 {
+    margin: 24px 0 40px;
+    max-width: 18ch;
+  }
+  .va-contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(244,221,141,0.20);
+  }
+  .va-contact-list li {
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(244,221,141,0.20);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .va-contact-list .va-mono { color: var(--gold-deep); }
+  .va-contact-list a, .va-contact-static {
+    font-family: var(--display);
+    font-size: clamp(22px, 2.4vw, 28px);
+    color: var(--cream);
+    line-height: 1.2;
+    transition: color 220ms var(--ease);
+  }
+  .va-contact-list a:hover { color: var(--gold); }
+  .va-contact-list small {
+    font-size: 13px;
+    color: var(--cream-mute);
+  }
+  .va-contact-list small a {
+    color: var(--gold);
+    transition: color 220ms var(--ease);
+  }
+  .va-contact-list small a:hover { color: var(--cream); }
+
+  .va-contact-form-title {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(28px, 3.2vw, 36px);
+    line-height: 1.15;
+    color: var(--cream);
+    margin: 24px 0 28px;
+    max-width: 22ch;
+  }
+  .va-contact-form-shell {
+    background: var(--ink-soft);
+    border: 1px solid rgba(244,221,141,0.18);
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 30px 80px -40px rgba(0,0,0,0.8);
+  }
+  .va-contact-formfoot {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--cream-mute);
+    text-align: center;
+  }
+
+  .va-hero-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 4px rgba(244,221,141,0.12);
+    display: inline-block;
+  }
+`;

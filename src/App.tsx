@@ -2,12 +2,25 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
-import Diensten from "./pages/Diensten";
+import Aanpak from "./pages/Aanpak";
 import Over from "./pages/Over";
+import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Focus from "./pages/Focus";
+import Installatiebedrijven from "./pages/Installatiebedrijven";
+import Woningverbetering from "./pages/Woningverbetering";
+import GratisDemoPage from "./pages/GratisDemoPage";
 import NotFound from "./pages/NotFound";
+
+// Blog posts
+import InboundVoiceAgents from "./pages/blog/InboundVoiceAgents";
+import OutboundAIAgents from "./pages/blog/OutboundAIAgents";
+import AIChatbots from "./pages/blog/AIChatbots";
+import RAGAgents from "./pages/blog/RAGAgents";
+import LeadScrapeAgents from "./pages/blog/LeadScrapeAgents";
 
 const queryClient = new QueryClient();
 
@@ -19,9 +32,24 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/diensten" element={<Diensten />} />
+          <Route path="/aanpak" element={<Aanpak />} />
+          <Route path="/diensten" element={<Navigate to="/aanpak" replace />} />
           <Route path="/over" element={<Over />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/inbound-voice-agents" element={<InboundVoiceAgents />} />
+          <Route path="/blog/outbound-ai-agents" element={<OutboundAIAgents />} />
+          <Route path="/blog/ai-chatbots" element={<AIChatbots />} />
+          <Route path="/blog/rag-agents" element={<RAGAgents />} />
+          {/* Social Media Agents is uit de blog gehaald; oude URL doorsturen
+              in plaats van 404, want hij stond in de sitemap. */}
+          <Route path="/blog/social-media-agents" element={<Navigate to="/blog" replace />} />
+          <Route path="/blog/lead-scrape-agents" element={<LeadScrapeAgents />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/focus" element={<Focus />} />
+          <Route path="/installatiebedrijven" element={<Installatiebedrijven />} />
+          <Route path="/woningverbetering" element={<Woningverbetering />} />
+          <Route path="/gratis-demo" element={<GratisDemoPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

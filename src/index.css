@@ -2,114 +2,391 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* ---------- Voxa Auris design tokens (2026 redesign) ---------- */
+:root {
+  --ink: #0A0A0A;
+  --ink-soft: #141414;
+  --ink-line: #1F1F1F;
+  --ink-darker: #070707;
+  --gold: #F4DD8D;
+  --gold-deep: #C9B26C;
+  --cream: #E8E4DA;
+  --cream-mute: #8B8578;
 
+  --display: "Instrument Serif", ui-serif, Georgia, serif;
+  --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --gutter: clamp(24px, 5vw, 80px);
+  --max: 1280px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Tailwind shadcn token mapping (kept so existing UI primitives still render). */
 @layer base {
   :root {
-    /* Voxa Auris Brand Colors */
-    --background: 0 0% 0%;
-    --foreground: 45 80% 76%;
-    
-    --card: 0 0% 5%;
-    --card-foreground: 45 80% 76%;
-    
-    --popover: 0 0% 5%;
-    --popover-foreground: 45 80% 76%;
-    
-    --primary: 45 80% 76%;
-    --primary-foreground: 0 0% 0%;
-    
-    --secondary: 194 80% 49%;
-    --secondary-foreground: 0 0% 0%;
-    
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
-    
-    --accent: 194 80% 49%;
-    --accent-foreground: 0 0% 0%;
-    
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 45 80% 76%;
-    
+    --background: 0 0% 4%;
+    --foreground: 42 43% 88%;
+    --card: 0 0% 8%;
+    --card-foreground: 42 43% 88%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 42 43% 88%;
+    --primary: 47 80% 76%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 42 43% 88%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 35 12% 51%;
+    --accent: 47 80% 76%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 42 43% 88%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 47 80% 76%;
     --radius: 0.75rem;
-    
-    /* Premium Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(45, 80%, 76%) 0%, hsl(45, 70%, 65%) 100%);
-    --gradient-tech: linear-gradient(135deg, hsl(194, 80%, 49%) 0%, hsl(194, 70%, 38%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 5%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 5%) 0%, hsl(0, 0%, 8%) 100%);
-    
-    /* Glows & Shadows */
-    --glow-gold: 0 0 40px hsl(45, 80%, 76% / 0.3);
-    --glow-blue: 0 0 40px hsl(194, 80%, 49% / 0.3);
-    --shadow-premium: 0 20px 60px -10px hsl(0, 0%, 0% / 0.8);
-    --shadow-card: 0 10px 40px -10px hsl(45, 80%, 76% / 0.1);
-    
-    /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-  .dark {
-    --background: 0 0% 0%;
-    --foreground: 45 80% 76%;
-    
-    --card: 0 0% 5%;
-    --card-foreground: 45 80% 76%;
-    
-    --popover: 0 0% 5%;
-    --popover-foreground: 45 80% 76%;
-    
-    --primary: 45 80% 76%;
-    --primary-foreground: 0 0% 0%;
-    
-    --secondary: 194 80% 49%;
-    --secondary-foreground: 0 0% 0%;
-    
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
-    
-    --accent: 194 80% 49%;
-    --accent-foreground: 0 0% 0%;
-    
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 45 80% 76%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-padding-top: 88px;
   }
-
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--ink);
+    color: var(--cream);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight;
+  ::selection { background: var(--gold); color: var(--ink); }
+
+  a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+  button { font: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+
+  h1, h2, h3 { margin: 0; font-weight: 400; text-wrap: pretty; overflow-wrap: break-word; }
+
+  img, svg, video { max-width: 100%; height: auto; display: block; }
+}
+
+/* ---------- Utility primitives shared across the site ---------- */
+.va-mono {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream-mute);
+}
+
+.va-h1 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(56px, 8.2vw, 104px);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  color: var(--cream);
+}
+
+.va-h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(36px, 5.2vw, 64px);
+  line-height: 1.0;
+  letter-spacing: -0.005em;
+  color: var(--cream);
+}
+
+.va-h3 {
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+}
+
+.va-body {
+  color: var(--cream);
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 52ch;
+}
+
+.va-gold { color: var(--gold); }
+.va-mute { color: var(--cream-mute); }
+.va-italic-gold { font-style: italic; color: var(--gold); font-weight: 400; }
+
+.va-wrap {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.va-section {
+  position: relative;
+  padding-top: clamp(120px, 14vw, 180px);
+  padding-bottom: clamp(120px, 14vw, 180px);
+}
+.va-section-tall {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: clamp(120px, 14vw, 180px);
+  padding-bottom: clamp(120px, 14vw, 180px);
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 720px) {
+  .va-section-tall { min-height: auto; padding-top: 96px; padding-bottom: 96px; }
+}
+.va-section-darker { background: var(--ink-darker); }
+
+/* Buttons */
+.va-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid transparent;
+  transition: transform 220ms var(--ease), box-shadow 220ms var(--ease),
+              background 220ms var(--ease), color 220ms var(--ease),
+              border-color 220ms var(--ease);
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: var(--body);
+}
+.va-btn-primary { background: var(--gold); color: var(--ink); }
+.va-btn-primary:hover {
+  transform: translateY(-2px);
+  background: var(--gold);
+  box-shadow: 0 10px 28px -12px rgba(244,221,141,0.55), 0 0 0 1px rgba(244,221,141,0.18);
+}
+.va-btn-ghost {
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid var(--ink-line);
+}
+.va-btn-ghost:hover {
+  transform: translateY(-2px);
+  border-color: rgba(244,221,141,0.35);
+  color: var(--gold);
+}
+.va-btn .va-arr { transition: transform 220ms var(--ease); }
+.va-btn:hover .va-arr { transform: translateX(3px); }
+
+/* Magnetic wrapper */
+.va-magnetic { display: inline-block; will-change: transform; }
+@media (hover: none), (pointer: coarse) {
+  .va-magnetic { transition: transform 120ms var(--ease); }
+  .va-magnetic:active { transform: scale(0.97) !important; }
+  .va-btn { padding: 14px 22px; min-height: 44px; }
+}
+
+/* Reveal */
+.va-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 800ms var(--ease), transform 800ms var(--ease);
+}
+.va-reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.va-reveal[data-stagger="2"] { transition-delay: 80ms; }
+.va-reveal[data-stagger="3"] { transition-delay: 160ms; }
+.va-reveal[data-stagger="4"] { transition-delay: 240ms; }
+.va-reveal[data-stagger="5"] { transition-delay: 320ms; }
+.va-reveal[data-stagger="6"] { transition-delay: 400ms; }
+
+/* Phone form (final CTA) */
+.va-phone-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink-soft);
+  border: 1px solid var(--ink-line);
+  border-radius: 999px;
+  padding: 6px 6px 6px 24px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 28px;
+  transition: border-color 220ms var(--ease), box-shadow 220ms var(--ease);
+}
+.va-phone-form:focus-within {
+  border-color: rgba(244,221,141,0.45);
+  box-shadow: 0 0 0 4px rgba(244,221,141,0.07);
+}
+.va-phone-form .va-pre {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--cream-mute);
+  letter-spacing: 0.04em;
+}
+.va-phone-form input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: var(--cream);
+  padding: 12px 8px;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.va-phone-form input::placeholder { color: var(--cream-mute); }
+.va-phone-form .va-btn-primary { padding: 11px 18px; }
+
+/* Chip */
+.va-chip {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(244,221,141,0.35);
+  border-radius: 999px;
+  padding: 5px 12px;
+  display: inline-block;
+}
+
+/* Card surface */
+.va-card {
+  background: var(--ink-soft);
+  border: 1px solid rgba(244,221,141,0.18);
+  border-radius: 16px;
+}
+
+/* ---------------------------------------------------------------------------
+   Binnenpagina-hero + breadcrumb.
+   Gedeeld door Aanpak, Over, Blog, blogposts, Contact, Privacy, 404 en de
+   niche-landingspagina's. Stond eerder alleen in het page-scoped style-blok
+   van Aanpak.tsx, waardoor elke andere pagina de hero zonder padding-top
+   rendert en de breadcrumb onder de vaste navigatie schoof.
+--------------------------------------------------------------------------- */
+.va-aa-hero {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+.va-aa-hero-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(244,221,141,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244,221,141,0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 10%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 10%, transparent 75%);
+}
+.va-aa-hero-inner { position: relative; }
+
+.va-aa-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+.va-aa-breadcrumb a {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream-mute);
+  transition: color 220ms var(--ease);
+}
+.va-aa-breadcrumb a:hover { color: var(--cream); }
+.va-aa-sep {
+  color: var(--cream-mute);
+  opacity: 0.4;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.va-aa-current {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.va-hero-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(244,221,141,0.12);
+  display: inline-block;
+}
+
+/* Kaart-sectie onderaan Aanpak en de niche-landingspagina's. */
+.va-aa-scan {
+  position: relative;
+  padding-top: clamp(120px, 14vw, 180px);
+  padding-bottom: clamp(120px, 14vw, 180px);
+}
+.va-aa-scan::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(244,221,141,0.05), transparent 70%);
+  pointer-events: none;
+}
+.va-aa-scan-card {
+  position: relative;
+  max-width: 880px;
+  margin: 0 auto;
+  background: var(--ink-soft);
+  border: 1px solid rgba(244,221,141,0.18);
+  border-radius: 20px;
+  padding: 64px clamp(32px, 5vw, 72px);
+  text-align: center;
+}
+.va-aa-scan-card .va-mono { display: inline-block; margin-bottom: 6px; }
+.va-aa-scan-card h2 { max-width: 22ch; margin: 0 auto 28px; }
+.va-aa-scan-card > p { margin: 0 auto 40px; max-width: 52ch; color: var(--cream); }
+
+/* Inner-page hero responsive override (used across Aanpak/Over/Contact). */
+@media (max-width: 720px) {
+  body .va-aa-hero {
+    padding-top: 120px;
+    padding-bottom: 64px;
   }
-  
-  .glow-text {
-    text-shadow: var(--glow-gold);
+  body .va-aa-hero-h1 {
+    margin-bottom: 24px;
   }
-  
-  .glow-blue {
-    box-shadow: var(--glow-blue);
+  body .va-aa-hero-meta {
+    gap: 28px;
+    margin-top: 40px;
+    padding-top: 24px;
+    flex-direction: column;
   }
-  
-  .glow-gold {
-    box-shadow: var(--glow-gold);
+  body .va-aa-thesis-inner { gap: 24px; }
+  body .va-aa-channel { padding: 32px 0 40px; }
+  body .va-aa-scan { padding-top: 64px; padding-bottom: 64px; }
+  body .va-aa-scan-card {
+    padding: 40px 24px;
+    border-radius: 16px;
   }
+  body .va-aa-stage { padding-bottom: 40px; }
+  body .va-section { padding-top: 80px; padding-bottom: 80px; }
+  body .va-h1 { font-size: clamp(44px, 11vw, 64px); line-height: 1.0; }
+  body .va-h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.05; }
 }
